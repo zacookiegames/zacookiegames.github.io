@@ -20,3 +20,9 @@ tags:
 
 * We hang out on our  [discord server](https://discord.gg/9mr8czB)
 * Find the source code on [github](https://github.com/zacookiegames/zacookiegames.github.io)
+
+## Support the cause
+
+This site is only available because of donar's like you (and cool Dads?)
+
+<a href="https://www.patreon.com/bePatron?u=31153894" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
