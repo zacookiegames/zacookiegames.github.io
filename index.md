@@ -13,6 +13,8 @@ tags:
 * Going poop [Alpha](/games/im_going_poop.html)
 * Meanie simulato [Demo - Updated](/games/meanie_simulator.html)
 * Valentine's Day [Demo](/games/v_day.html)
+* Mind games [Test](/games/mind_games_test.html)
+
 * Five Night at ZaCookies - Not yet released
 
 
