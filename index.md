@@ -6,6 +6,10 @@ tags:
 
 <img style="max-height:300px" src="/images/cookies.jpg" />
 
+## Featured
+
+* Steve's Jungle and Bar - [Demo](/games/steve_jungle_and_bar.html)
+
 ## Games
 
 * Homeless Simulator - [Beta](/games/homeless_simulator_beta.html)
