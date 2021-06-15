@@ -8,6 +8,8 @@ tags:
 
 ## Featured
 
+* Agents of Narration HQ - [Full Game](/games/agents_of_narration.html)
+
 * Steve's Jungle and Bar - [Demo](/games/steve_jungle_and_bar.html)
 
 ## Games
