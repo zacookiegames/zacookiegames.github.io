@@ -11,7 +11,7 @@ tags:
 * Agents of Narration HQ - [Full Game](/games/agents_of_narration.html)
 
 * Steve's Jungle and Bar - [Demo](/games/steve_jungle_and_bar.html)
-<img src="/images/SANJABLogo.jpg">
+<img style="max-height:300px" src="/images/SANJABLogo.jpg">
 ## Games
 
 * Homeless Simulator - [Beta](/games/homeless_simulator_beta.html)
