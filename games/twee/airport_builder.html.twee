@@ -1,0 +1,92 @@
+:: StoryTitle
+Airport Builder
+
+
+:: StoryData
+{
+	"ifid": "7A159AF6-4EC5-40E7-919D-1BE917BCECB3",
+	"format": "SugarCube",
+	"format-version": "2.21.0",
+	"start": "start",
+	"zoom": 1
+}
+
+
+:: start {"position":"500,252","size":"100,100"}
+Hello welcome. Please enter your name so I know what to call you. 
+
+<<textbox "$name" "zach nuget">>
+
+[[welcome]]
+
+
+:: welcome {"position":"487,401","size":"100,100"}
+Hello $name first order off businnes we need a construction  crew so can you chose a contract.
+
+[[brian's buidlers]]
+[[maureens front loaders]]
+<img src="https://twinery.org/homepage/img/logo.svg" width="256" height="256">
+
+
+:: brian's buidlers {"position":"140,548","size":"100,100"}
+BRIANS BULDERS                                        
+
+
+workers:500
+
+productivity:250
+<<set $builders to 500>>
+
+<<set $productivity to 250>>
+
+Are you sure you want to use this contract?
+[[continue|build it]]
+[[no|welcome]]
+
+
+:: maureens front loaders {"position":"941,531","size":"100,100"}
+MAUREENS FRONT LOADERS
+					  
+workers:250
+
+productivity:500
+<<set $productivity to 500>>
+<<set $builders to 250>>
+<<set $front_load_key to 1>>
+
+
+
+[[continue|build it]]
+[[no|welcome]]
+
+
+:: build it {"position":"579,747","size":"100,100"}
+You've started with a productivity of $productivity and $builders builders. 
+lets buld something
+
+[[airport terminal]]
+
+[[road works]]
+
+
+:: airport terminal {"position":"504,897","size":"100,100"}
+<<set $_hours to 4>>
+
+Building will take $_hours hours
+
+<<set $_i to 0>>
+<<repeat 2s>>
+    <<set $_i to $_i+1>> <<set $_remaining to $_hours - $_i>>
+	Building in progress $_remaining hours to go.
+	    <<if $_i eq $_hours>> 		
+			The terminal is now built.
+			You can now build something [[again|build it]] 
+			<<stop>> 
+		<</if>> 
+<</repeat>>
+
+
+:: road works {"position":"654,897","size":"100,100"}
+Double-click this passage to edit it.
+
+

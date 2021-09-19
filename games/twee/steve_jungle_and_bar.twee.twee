@@ -1,0 +1,1054 @@
+:: StoryTitle
+Steve's all night jungle and bar
+
+
+:: StoryData
+{
+	"ifid": "5B847581-664F-49C8-9773-CA03E8E4BDF7",
+	"format": "Chapbook",
+	"format-version": "1.2.1",
+	"start": "Init",
+	"zoom": 1
+}
+
+
+:: Start {"position":"537,248","size":"100,100"}
+--
+**Welcome to the jungle**
+
+The jungle and grocery is a scary place where people eat animals, animals eat people and mothers cry at night.
+
+
+[if level === 1 ]
+Hi new player
+[if level === 2 ]
+You are a mage - congrats
+[if level === 3 ]
+dang man thats kinda epic
+[if level === 4]
+You must love the game
+[if level === 5]
+Like my flavor text?
+[if level === 6]
+You have achived knighthood
+[if level === 7 ]
+Well now your an epic mage
+[if level === 8 ]
+You have some serious dedication if your already level 8
+[if level === 9 ]
+Ok you love this game confirmed
+[if level === 10]
+Ok well you did something quite epic
+
+[continue]
+
+>  [[Turn right and go to the deep jungle|deepjungle]]
+>  [[Turn left and go to the grocery|grocery]]
+
+
+:: Turn right and go to the jungle {"position":"363,587","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: deepjungle {"position":"486,404","size":"100,100"}
+money: money+random.d10
+--
+
+You found some money in the deep jungle
+
+[[Turn right|right]]
+
+[[Turn left|left]]
+
+[[Go back|Start]]
+
+
+:: grocery {"position":"598,400","size":"100,100"}
+Welcome to GamerGrocery
+
+Honestly don't buy from us I mean the [[Gamer Shop|GamerShop]] has pretty much everything nowadays.
+
+[[Why's that?|GamerShopExplained]]
+
+[[Go back|Start]]
+[if ToolShopUnlock === false]
+
+[[They dont have any tools though!|ToolQuestCheck]]
+
+
+:: Init {"position":"615,107","size":"100,100"}
+money:30
+health:100
+level:1
+ToolShopUnlock:false
+ReadMazeBook:false
+MazeWentBack:false
+MazeVaultOpen:false
+HasTreasureX:false
+HasShovel:false
+DefeatCobra1:false
+ShakeShackStaff:false
+BuiltCampsiteBridge1:false
+TreasureHuntJob1:false
+BeatLordMapleFirstBossFight1:false
+LordMapleBossFightDamage1:0
+MineKeyCardDoorCodeUnlocked:false
+config.header.right: "Level: {level}   Money:{money}   Health:{health}"
+config.footer.right: "[[Restart|Init]] Go to [[Gamer Shop|GamerShop]]"
+--
+
+[[Begin the adventure|Start]]
+
+
+:: right {"position":"481,519","size":"100,100"}
+[if DefeatCobra1 === false]
+You encounter a cobra, what do you do?
+
+[[Run away|deepjungle]]
+
+[[I'll fight it!|Fight]]
+
+[[I bought a cobra taming book at the grocery for 10 dollars!|tame]]
+[if DefeatCobra1 === true]
+You remember the time when you defeated that cobra
+
+[[Continue|2]]
+
+[[Go back|deepjungle]]
+
+
+:: left {"position":"270,351","size":"100,100"}
+You come apon a maze and a book, what do you do?
+
+[[Read the book|MazePath]]
+
+[[Enter the maze|MazeStart]]
+
+[[Turn back|deepjungle]]
+
+
+:: tame {"position":"569,626","size":"100,100"}
+money: money-10
+DefeatCobra1:true
+--
+Luckily, it worked. You made the cobra go somewhere else and you continued your trip.
+
+>  [[Continue|2]]
+
+
+:: Fight {"position":"691,661","size":"100,100"}
+health: health-50
+DefeatCobra1:true
+--
+Your able to defeat it, but it got quite a few bites in.
+
+>  [[Continue|2]]
+
+
+:: 2 {"position":"449,628","size":"100,100"}
+You come across a X, which makes you think something is buried beneath it, if you had a shovel you could probably dig it up...
+[if HasShovel === false]
+
+[[Move on and do nothing|continue34]]
+
+[[Go back|right]]
+[if HasShovel === true]
+
+[[I'll dig it up!|DigTreasureX]]
+
+[[Go back|right]]
+
+[[Keep on the trail|continue34]]
+
+
+:: continue34 {"position":"445,748","size":"100,100"}
+You see a great river and a wooden bridge, you could try to cross the bridge but you might fall off and hurt yourself.
+
+[[Turn back|2]]
+
+[[Cross the bridge|BridgeCrossing1]]
+
+[[Swim|SwimAcrossTheWater1]]
+
+
+:: GamerShop {"position":"888,246","size":"100,100"}
+Welcome to the Gamer Shop my friend!
+
+What would you like? I have quite a lot of intresting items!
+
+If you want to level up or purchase tools, just ask to see the prices!
+
+[if money > 0]
+[[Buy a level|LevelStore]]
+
+[[Go back|Start]]
+[if money > 45]
+
+[[Boost your stats|StatStore]]
+
+[[Go back|Start]]
+[if money > 99]
+
+[[Purchase a item|ItemStoreGate]]
+
+[[Go back|Start]]
+[if money === 0]
+You can't afford anything :(
+
+[[Go back|Start]]
+
+
+:: LevelStore {"position":"747,421","size":"100,100"}
+LevelCost (level === 1): 100
+LevelCost (level === 2): 500
+LevelCost (level === 3): 1000
+LevelCost (level === 4): 2000
+LevelCost (level === 5): 5000
+LevelCost (level === 6): 10000
+LevelCost (level === 7): 20000
+LevelCost (level === 8): 40000
+LevelCost (level === 9): 100000
+LevelCost (level === 10): 1000000
+--
+Your current level is:{level}
+
+The next level costs: ${LevelCost}
+[if money < LevelCost]
+
+Your not able to afford a new level :(
+
+[[Go Back|GamerShop]]
+
+[if money > LevelCost]
+
+You have enough for the next level!
+
+[[Buy|LevelStoreBuy]]
+
+[[Cancel|GamerShop]]
+[if money === LevelCost]
+
+You have enough for the next level!
+
+[[Buy|LevelStoreBuy]]
+
+[[Cancel|GamerShop]]
+
+
+:: StatStore {"position":"891,406","size":"100,100"}
+Your current health is {health}
+
+How much health would you like to buy?
+
+[if health <50]
+[[Plus 50 health $45]]
+
+[[Plus 10 health $10]]
+[if health >50]
+[[Plus 10 health $10]]
+
+[[Plus 5 health $5]]
+
+
+:: ItemStoreGate {"position":"1071,353","size":"100,100"}
+[if ToolShopUnlock === false]
+Out of stock.
+
+[[Go back|GamerShop]]
+
+[if ToolShopUnlock === true]
+
+I see you have a pass, come on in.
+
+[[Enter|ItemStore]]
+
+[[Head back|GamerShop]]
+
+
+:: LevelStoreBuy {"position":"702,303","size":"100,100"}
+level: level + 1
+money: money - LevelCost
+--
+
+Your new level is: {level}!
+
+You have ${money} left!
+
+[[Go back|GamerShop]]
+
+
+:: Plus 50 health $45 {"position":"848,517","size":"100,100"}
+health: health + 50
+money: money - 45
+--
+
+Your new health is {health}
+
+[[Go back|GamerShop]]
+
+
+:: Plus 10 health $10 {"position":"954,518","size":"100,100"}
+health: health + 10
+money: money - 10
+--
+
+Your new health is {health}
+
+[[Go back|GamerShop]]
+
+
+:: Plus 5 health $5 {"position":"1062,518","size":"100,100"}
+health: health + 5
+money: money - 5
+--
+Your new health is: {health}
+
+[[Go back|GamerShop]]
+
+
+:: MazePath {"position":"267,483","size":"100,100"}
+ReadMazeBook: true
+--
+The book reads:
+
+To all who enter this sacred jungle, I say to you.
+
+Listen to my warning. There is more at stake then you know.
+
+If thou shall seek the knowledge of the maze, you must solve these riddles.
+
+1, What direction do you always call correct?
+
+2, What runs but never sleeps, and is what you are mostly made of?
+
+3, How must you deal with loss?
+
+4, Is the answer _____?
+
+5, You must sometimes retrace your steps.
+
+[[Go back|left]]
+
+
+:: MazeStart {"position":"280,241","size":"100,100"}
+You enter the maze, you can go right or left.
+
+[[Left|Maze fail 1]]
+
+[[Right|Maze2]]
+
+
+:: Maze fail 1 {"position":"160,229","size":"100,100"}
+You hit a dead end.
+
+[[Turn Back|MazeStart]]
+
+
+:: Maze2 {"position":"212,108","size":"100,100"}
+You find a door with a number 2 on it, and a sign that says:
+
+"Answer The Question"
+
+[if ReadMazeBook === true]
+
+This reminds you off the riddle on the book, what do you think the answer is?
+
+[[Water|Maze3]]
+
+[[You on caffene|MazeFail2]]
+
+[[Your legs|MazeFail2]]
+
+[[I want to see the book again|left]]
+
+[else]
+I should go see if I missed any clues
+
+[[Go back|left]]
+
+
+:: Maze3 {"position":"265,0","size":"100,100"}
+There are 4 ways you can go, foward backwards left and right.
+
+[[Go back|Maze2]]
+
+[[Go Foward|Maze4]]
+
+[[Go left|MazeFail3]]
+
+[[Go right|MazeFailRight]]
+
+
+:: MazeFail2 {"position":"391,289","size":"100,100"}
+Nothing happens
+
+[[I should try again|Maze2]]
+
+[[Let me read the book again|left]]
+
+
+:: Maze4 {"position":"134,0","size":"100,100"}
+[if MazeWentBack === false]
+You can go right or left
+
+[[Go back|Maze3]]
+
+[[Go left|Mazefail6]]
+
+[[Go right|Maze5]]
+
+[if MazeWentBack === true]
+It seems a door has appeared
+
+[[Go back|left]]
+
+[[Open the door|MazeDoor]]
+
+
+:: MazeFail3 {"position":"434,0","size":"100,100"}
+You can go right or left
+
+[[Go back|Maze3]]
+
+[[Go left|MazeFail:():]]
+
+[[Go left|MazeFail:():]]
+
+
+:: MazeFailRight {"position":"452,136","size":"100,100"}
+It leads to a dead end
+
+[[Go back|Maze3]]
+
+
+:: MazeFail:(): {"position":"332,120","size":"100,100"}
+Quod quid est cur Cur
+
+[[Revertere|Start]]
+
+
+:: Mazefail6 {"position":"10,109","size":"100,100"}
+It's a dead end
+
+[[Go back|Maze4]]
+
+
+:: Maze5 {"position":"21,245","size":"100,100"}
+MazeWentBack:true
+--
+You can go left or right
+
+[[Go back|Maze4]]
+
+[[Go left|Fail9]]
+
+[[Go right|Fail9]]
+
+
+:: MazeDoor {"position":"126,414","size":"100,100"}
+[if MazeVaultOpen === true]
+
+The vault has already been raided
+
+[[Go back|left]]
+
+[if MazeVaultOpen === false]
+
+There seems to be a vault of gold!
+
+[[Open it!|MazeVault]]
+
+
+:: Fail9 {"position":"21,361","size":"100,100"}
+It goes to a dead end
+
+[[Go back|Maze5]]
+
+
+:: MazeVault {"position":"126,564","size":"100,100"}
+money: money + 70
+MazeVaultOpen:true
+--
+You grab the money in the vault
+
+You now have ${money}
+
+[[Go back|left]]
+
+
+:: DigTreasureX {"position":"572,739","size":"100,100"}
+[if HasTreasureX === false]
+You dig up a big chest, are you sure you want to open it?
+
+[[Yes|OpenTreasureX]]
+
+[[No|2]]
+[if HasTreasureX === true]
+You already dug up the chest and its contents
+
+[[Go back|2]]
+
+
+:: OpenTreasureX {"position":"685,741","size":"100,100"}
+HasTreasureX:true
+money: money + 750
+--
+You open the chest to find 750 dollars worth of gold!
+
+You now have ${money}!
+
+[[Go back|2]]
+
+
+:: ToolQuestCheck {"position":"621,511","size":"100,100"}
+Well I might know how to get some tools.... But you would need to be level 3..
+
+[[Oh Well|Start]]
+
+[if level >2]
+[[But I am level 3!|ToolQuestStart]]
+
+
+:: ToolQuestStart {"position":"741,541","size":"100,100"}
+MineKeyCardDoorCodeUnlocked:true
+--
+Well hello young friend! I'm sorry to say that the tool quest isnt ready yet, but as I want you to still unlock the hidden areas, you get a basic tool pass.
+
+[[Yay!|TempToolUnlock]]
+
+
+:: BridgeCrossing1 {"position":"389,849","size":"100,100"}
+health: health - 30
+--
+You crossed the bridge but you fell and hurt yourself.
+
+[[Continue|RiverShore1]]
+
+
+:: SwimAcrossTheWater1 {"position":"492,850","size":"100,100"}
+It works, your able to make it to other side of the river!
+
+[[Continue|RiverShore1]]
+
+
+:: RiverShore1 {"position":"437,964","size":"100,100"}
+You find 3 main trails, where will you go?
+
+[[Go back|continue34]]
+
+[[Go on the first trail|TheShakeSnake]]
+
+[[Go on the second trail|ReallyBigHole1]]
+
+[[Go on to the third trail|Level2Gate]]
+
+
+:: TheShakeSnake {"position":"179,897","size":"100,100"}
+You come apon a building called "The Shake Shack"
+
+You see two double glass doors and a keycard door
+
+[[Open Glass Doors|TheShakeShackShop]]
+
+[[Turn back|RiverShore1]]
+
+[if ShakeShackStaff === true]
+[[Use keycard|ShakeShackStaff]]
+
+
+:: TheShakeShackShop {"position":"28,1046","size":"100,100"}
+Welcome to the shake shop! *We serve shakes that may or may not contain nuclear waste material, and are not liable for death or radiation poisoning.*
+
+[[View the menu|TheShakeShackMenu]]
+[if level === 1]
+
+You also see a sign that says looking for staff
+
+[[Apply|BecomeShakeShackStaff]]
+
+
+:: ShakeShackStaff {"position":"268,1054","size":"100,100"}
+[if level === 1]
+
+You make 5 dollars per click, oh well.
+
+[[Work|ShakeShackWork]]
+
+[[Stop working|RiverShore1]]
+[if level > 1]
+
+You see a letter on your desk
+
+[[Read the letter|ShakeShackStaffmakefalse]]
+
+
+:: TheShakeShackMenu {"position":"19,1155","size":"100,100"}
+Menu:
+[if money >100]
+
+[[Democracy juice $100|BuyDemocracyJuiceShake]]
+[if money >1000]
+
+[[Dragon juice $1000|BuyDragonJuiceShake]]
+[if money > 0]
+
+[[Toxic waste FREE|BuyToxicWasteShake]]
+
+[[Air $1|BuyAirAndWasteADollar]]
+
+[[Leave|RiverShore1]]
+
+[else]
+
+[if money === 0]
+
+[[Leave|RiverShore1]]
+
+
+:: BecomeShakeShackStaff {"position":"133,1144","size":"100,100"}
+You applied and oddly enough you were hired. You were also given a lovely note: Please remember that your not payed nearly enough and also we can fire you if we want :D
+
+[[Continue|ShakeShackStaffSettrue]]
+
+
+:: ShakeShackStaffSettrue {"position":"165,1058","size":"100,100"}
+ShakeShackStaff: true
+--
+
+[[Return to the TheSnakeShack|TheShakeSnake]]
+
+
+:: ShakeShackWork {"position":"250,1159","size":"100,100"}
+money: money + 5
+--
+You now have ${money}!
+
+[[Keep working|ShakeShackStaff]]
+
+
+:: ShakeShackStaffmakefalse {"position":"356,1166","size":"100,100"}
+ShakeShackStaff:false
+--
+Your fired you fool
+
+[[Oh well....|RiverShore1]]
+
+
+:: TempToolUnlock {"position":"822,654","size":"100,100"}
+ToolShopUnlock:true
+--
+You can now buy tools, but be warned! The tools are still being worked on and not a lot of things require them, but they still are fun! Also, I heard something about a mine keycard door and it made me think of the number 4927, not sure why. Hope this helps you!
+
+[[Alright!|GamerShop]]
+
+
+:: ItemStore {"position":"1186,357","size":"100,100"}
+I dont have a lot of goods right now, but I'll show you what you can afford
+
+[[Go back|GamerShop]]
+
+[if money >500]
+[[Shovel $500]]
+
+
+:: Shovel $500 {"position":"1066,233","size":"100,100"}
+money: money - 500
+HasShovel:true
+--
+
+You now own a shovel, your remaiming funds are ${money}.
+
+[[Return|Start]]
+
+
+:: BuyDemocracyJuiceShake {"position":"8,1275","size":"100,100"}
+money: money - 100
+health: health +50
+--
+You can now vote, I mean you could always do that but now you feel its healthy to persue freedom. That made your health {health}.
+
+[[I vote to continue playing this game!|RiverShore1]]
+
+[[I dont vote to continue playing this game!|BadVoterShallDie]]
+
+
+:: BuyDragonJuiceShake {"position":"350,1272","size":"100,100"}
+health: health +150
+money: money - 1000
+--
+You drank the dragon juice and felt very healthy all of sudden, but it was not able to fully heal you as it was very hot, your new health is {health}.
+
+[[Continue|RiverShore1]]
+
+
+:: BuyToxicWasteShake {"position":"244,1272","size":"100,100"}
+You die because you drank toxic waste
+
+[[Restart|Init]]
+
+
+:: BuyAirAndWasteADollar {"position":"137,1264","size":"100,100"}
+money: money - 1
+--
+I have no idea what you expected, but you lost 1 dollar.
+
+[[Continue|Start]]
+
+
+:: BadVoterShallDie {"position":"0,1423","size":"100,100"}
+health: -9999999999
+money: -9999999999
+level: -9999999999
+--
+
+Well I suppose we all make mistakes
+
+[[Restart|Init]]
+
+
+:: ReallyBigHole1 {"position":"576,961","size":"100,100"}
+After walking for a bit you find a giant hole in the ground, which would look to be an abandoned mine if not for the smoke rising from it
+
+[[Go back|RiverShore1]]
+
+[[Investagate|ReallyBigHole2 ]]
+
+
+:: ReallyBigHole2 {"position":"707,960","size":"100,100"}
+As you investagate around the hole, you see a poorly hidden door which requires a password, is asks you to enter it below:
+
+{text input for: 'MinePasswordDoorCode'}
+
+[[Check password|MinePasswordCheck1]]
+
+[[Go back|ReallyBigHole1]]
+
+[if MineKeyCardDoorCodeUnlocked === true]
+Maybe that number you were told about when you unlocked is the code!
+
+4927
+
+
+:: Level2Gate {"position":"459,1101","size":"100,100"}
+[if level === 1]
+You come across an old hut with a man inside who says he wants to ask you some questions
+
+[[Alright|Level2GateExplain]]
+
+[[Head back quickly|RiverShore1]]
+
+[if level > 1]
+The man in the hut greets you as you head down to your new tent
+
+[[Head back|RiverShore1]]
+
+[[Head to the campsite|Campsite1 ]]
+
+
+:: Level2GateExplain {"position":"596,1045","size":"100,100"}
+"I'm the gate keeper of this here campground" he says "And only level 2+ people are allowed to stay!". "Until you become level 2 or higher, you cant come in here"
+
+[[How do I increase my level?|LevelIncreaseExplained]]
+
+[[Alright|RiverShore1]]
+
+
+:: LevelIncreaseExplained {"position":"707,1080","size":"100,100"}
+"You buy them from the gamer store, here are some directions" he tells you
+
+[[Vist the Gamer Shop|GamerShop]]
+
+[[Alright|RiverShore1]]
+
+
+:: Head to the campsite {"position":"0,0","size":"100,100"}
+You shouldn't be here!
+
+
+:: Campsite1 {"position":"537,1300","size":"100,100"}
+[if BuiltCampsiteBridge1 === false]
+To get to tent, you would have to cross a river, and to cross that you would need to hire someone to build a bridge
+
+[[Hire someone|BuildBridgeCampsiteGate]]
+
+[[Turn back|RiverShore1]]
+
+[if BuiltCampsiteBridge1 === true]
+As you cross over your picturesque wooden bridge, you feel powerfull as you were able to transform nature itself
+
+[[Continue|Campsite2]]
+
+[[Head back|RiverShore1]]
+
+
+:: MinePasswordCheck1 {"position":"842,957","size":"100,100"}
+[if MinePasswordDoorCode == 4927]
+It works and the door opens, what do you do now?
+
+[[Enter the hole|EnterHole1]]
+
+[[Leave the door|RiverShore1]]
+
+[else]
+The door doesn't respond, maybe you'll be able to find the door code if you also got tools.
+
+[[Turn back|RiverShore1]]
+
+
+:: EnterHole1 {"position":"828,1087","size":"100,100"}
+Inside the room you see a peice of paper telling you:
+
+We never began anew, we only return to the start
+
+[[Or do we|RiverShore1]]
+
+
+:: GamerShopExplained {"position":"375,481","size":"100,100"}
+Well when the [[Gamer Shop|GamerShop]] opened with all there cool items and nice prices everyone went there instead of here. Although we used to still get some customers from buy local, but when Gamer Inc. opened and online shopping became so easy the Gamer Shop became local.
+
+[[Alright|grocery]]
+
+
+:: BuildBridgeCampsiteGate {"position":"595,1165","size":"100,100"}
+[if money >24]
+It will cost you $25 of your {money} dollars but you can build a bridge
+
+[[Build the bridge|BuiltCampsiteBridge1settrue]]
+
+[[Cancel it|RiverShore1]]
+
+[if money <25]
+
+You need 25 dollars to build the bridge
+
+[[Go back|RiverShore1]]
+
+
+:: Campsite2 {"position":"699,1408","size":"100,100"}
+You find a old poster saying something about a hidden treasure
+
+[[Investagate it|TresasureHunt1]]
+
+[[Ignore it|CampsiteHub1]]
+
+
+:: BuiltCampsiteBridge1settrue {"position":"804,1250","size":"100,100"}
+BuiltCampsiteBridge1:true
+money: money - 25
+--
+The bridge is built before your eyes, a true marvel of modern enginering.
+
+[[Continue|Campsite2]]
+
+
+:: TresasureHunt1 {"position":"574,1409","size":"100,100"}
+Upon further inspection, you discover that the sign was actually a job offering
+
+[[Continue investagating|TreasureHunt2]]
+
+[[Stop investagating|Campsite2]]
+
+
+:: CampsiteHub1 {"position":"692,1521","size":"100,100"}
+On the right side, you see a old moss covered stone door and on the left side you see a small fountain. Wen you look in front of you, your able to see that the path continues.
+
+[[Go back|Campsite2]]
+
+[[Go foward|CampHub1]]
+
+[[Investagate the door|TempleGate1]]
+
+[[Investagate the fountain|InspectFountain1]]
+
+
+:: TreasureHunt2 {"position":"448,1415","size":"100,100"}
+The job is for scavenging scrap, and your paid in verying amounts depending on the quality of the scrap. Although it's only taking level 2 staff
+
+[[Go back|Campsite2]]
+
+[if level === 2]
+[[Work|TreasureHuntWork1]]
+
+
+:: TreasureHuntWork1 {"position":"338,1413","size":"100,100"}
+[if level === 2]
+Your job tells you to look for scrap nearbye
+
+[[Work|TreasureHuntWorkButYes]]
+
+[[Finish for the day|Campsite2]]
+
+[else]
+Only level 2 staff are allowed
+
+[[Head back|Campsite2]]
+
+
+:: TreasureHuntWorkButYes {"position":"221,1419","size":"100,100"}
+money: money + 10
+--
+
+[[Deposit load|TreasureHuntWork1]]
+
+
+:: CampHub1 {"position":"698,1685","size":"100,100"}
+This is the end so far, but the game will probably be updated the week.
+I thank you for playing the game, and also want you not to think the game is done. The game in it's current state is over, but consider this a alpha game or maybe a demo. Also make sure you've explored everything, a lot of parts are hidden between a single choice, like for instance if you click left at the start, you have a entire adventure you could have missed if you clicked right and never went back.
+
+[[Yay!|Start]]
+
+[[Restart the game|Init]]
+
+
+:: TempleGate1 {"position":"564,1539","size":"100,100"}
+On the door was a few french words, which seemed to only want people level 3 or above to read
+
+[[Leave it|CampsiteHub1]]
+[if level > 2]
+
+[[Read the words|TempleWords1]]
+
+
+:: InspectFountain1 {"position":"798,1524","size":"100,100"}
+The water in the fountain seemed to have a green tint, reminding you of a story about a secret society foiled by a single poisoned olive.
+
+[[Return to the trail|CampsiteHub1]]
+
+
+:: TempleWords1 {"position":"449,1531","size":"100,100"}
+The words go as follows:
+
+*Where we all pray*
+
+*Each and every day*
+
+*If he'll return*
+
+*We will all turn*
+
+*Forever*
+
+Then the door opens into a hallway as soon as you finish reading the words.
+
+[[Enter the hallway|TempleHallway1]]
+
+[[Stay away from the hallway|CampsiteHub1]]
+
+
+:: TempleHallway1 {"position":"331,1535","size":"100,100"}
+The hallway is lit by burning torches, which although seeming anchient are still burning. Casting an erie shadow across the floor and revealing a sign that says: Now is your last to chance to get your health up really high because if you dont you might die
+
+[[Take a break to boost your health|RiverShore1]]
+
+[[Continue foward|TempleBossFightStart]]
+
+
+:: TempleBossFightStart {"position":"220,1538","size":"100,100"}
+[if BeatLordMapleFirstBossFight1 === false]
+You hear a door close behind you, the sign did say it was your last chance
+
+[[Hope you got some health|TempleBossFightActuallStart]]
+[if BeatLordMapleFirstBossFight1 === true]
+You remember the harsh fight you first encountered when you entered this temple, it's a good thing thats over with. Although, there might soon be more stuff here.
+
+[[Return|CampsiteHub1]]
+
+
+:: TempleBossFightActuallStart {"position":"110,1541","size":"100,100"}
+health: health - 15
+--
+Inside the room your now trapped in, torches all around the walls start to reveal themselves, lighting on fire one after another.
+
+And then the wall opens in front of you
+
+And a man walks out
+
+And the sheer power eminating from the man is enough to hurt your health by 15 points, leaving you with {health}
+
+[[Continue|TempleBossFightStart1]]
+
+
+:: TempleBossFightStart1 {"position":"6,1538","size":"100,100"}
+[if health < 1]
+You died, which is kinda weird when he only did 15 damage to you.
+
+Oh well
+
+[[Restart|Init]]
+
+[if health > 0]
+You need to decide where to hit him, in the head or chest
+
+[[Head|TempleBossFight2]]
+
+[[Chest|TempleBossFight1fail]]
+
+
+:: TempleBossFight2 {"position":"0,1646","size":"100,100"}
+LordMapleBossFightDamage1: LordMapleBossFightDamage1 + 1
+--
+You get a few more hits in, and it seems mostly to annoy him, and if you get 2 more good hits you might actually annoy him enough to defeat him!
+You could also try to kick him as well, but who knows if it will work
+
+[[Kick him|TempleBossFight2Win]]
+
+[[Hit him|TempleBossFight2Meh]]
+
+
+:: TempleBossFight1fail {"position":"108,1650","size":"100,100"}
+health: health - 30
+--
+Well his chest was heavily armored, and hitting it only ended up hurting you by 30 points, oh well
+
+[if health < 1]
+And now your dead :(
+
+[[Restart|Init]]
+[else]
+
+[[Continue|TempleBossFight2]]
+
+
+:: TempleBossFight2Win {"position":"7,1753","size":"100,100"}
+LordMapleBossFightDamage1: LordMapleBossFightDamage1 + 1
+health: health - 15
+--
+Kicking him actually hurt him, but his strong legs hurt to kick and cost 15 health
+
+[if health < 1]
+And it cost you your life :(
+
+[[Restart|Init]]
+[else]
+[[Continue|TempleBossFight3]]
+
+
+:: TempleBossFight2Meh {"position":"118,1757","size":"100,100"}
+He was ready for your punches, causing them to fail.
+
+[[Continue|TempleBossFight3]]
+
+
+:: TempleBossFight3 {"position":"6,1864","size":"100,100"}
+LordMapleBossFightDamage1: LordMapleBossFightDamage1 + 1
+--
+You get some hits into him and thats seems to annoy him
+
+[if LordMapleBossFightDamage1 === 3]
+[[Continue|TempleBossFightDone]]
+[else]
+You just need to hit him once more!
+
+[[Kick|TempleBossFight2Win]]
+
+
+:: TempleBossFightDone {"position":"294,1701","size":"100,100"}
+BeatLordMapleFirstBossFight1:true
+health:100
+money: money + 500
+--
+You have annoyed my puny human, but also suprised me. You will be rewarded the right to live and some gold. But you have raided my temple and that is unaceptable. Do not interfear with any of my things or I will not be so generous. I will teleport you back.
+
+[[Teleport|CampsiteHub1]]
+
+

@@ -1,0 +1,174 @@
+:: StoryTitle
+Meanie Simylater
+
+
+:: StoryData
+{
+	"ifid": "9F031243-8BB0-43E0-9E8A-356B338C637A",
+	"format": "Harlowe",
+	"format-version": "2.1.0",
+	"start": "Start",
+	"zoom": 0.6
+}
+
+
+:: Start {"position":"2107,571","size":"100,100"}
+Once upon a time there was a giant slob who needed to go to school. But he couldn't get off his bum to go. How do you get him to go: 
+
+[[Shoot him with a gun]]
+[[Set his bum on fire]]
+
+
+:: Shoot him with a gun {"position":"2707,800","size":"100,100"}
+He died. Nice work Mr. Know it all. 
+
+[[Restart |Start]]
+
+
+:: Set his bum on fire {"position":"2698,299","size":"100,100"}
+Congratulations Mr kind of knows it all, it smells like cooked poop, but our friend went to school. All we need to worry about is him stinking up the classroom. Your options are
+
+[[Bring cookies for the Teacher]]
+[[Get yelled at by the Teacher]]
+[[Get thrown in the dump]]
+
+
+:: Bring cookies for the Teacher {"position":"1865,371","size":"100,100"}
+it turns out shes allerigc, you die                                                   
+
+[[respaqwn|Start]]
+
+
+:: Get yelled at by the Teacher {"position":"1099,363","size":"100,100"}
+It turns out the teacher yells out her lungs. The substutes nose is cloged good job!
+
+[[Continue]]
+
+[[Give up|Start]]
+
+
+:: Get thrown in the dump {"position":"1831,66","size":"100,100"}
+Now you smell worse. Hopefully people don't think you're Igor.
+ 
+ 
+ [[Back|Set his bum on fire]]
+
+
+:: Continue {"position":"606,1304","size":"100,100"}
+The Principle Calls the swatt team, What now?
+
+[[Kill the swatt team]]
+
+[[Threaten the swatt team]]
+
+
+:: Kill the swatt team {"position":"256,1281","size":"100,100"}
+The swatt team nukes your house! You are[[dead|Start]]
+
+
+:: Threaten the swatt team {"position":"897,1314","size":"100,100"}
+Oh no The swatt team dies because it is so stinky
+
+[[YaY!|Boo!]]
+
+
+:: Boo! {"position":"1069,1505.6666666666667","size":"100,100"}
+A elite team of hedgehogs is dispaspached with a mr. Clean mobile.
+
+[[Oh......]]
+
+[[die!!!!!]]
+
+
+:: Oh...... {"position":"992,1665.3333333333333","size":"100,100"}
+hey, im updating it so uhh 
+
+[[STOP TALKING, ME PLAY|pt 2]]
+
+
+:: die!!!!! {"position":"1187,1640","size":"100,100"}
+So they kill you[[:(|Start]]
+
+
+:: pt 2 {"position":"988.6666666666667,1815.3333333333333","size":"100,100"}
+after fighting the hedgehogs, you went back to school
+
+
+[[Continue| continue 2]]
+
+
+::  continue 2 {"position":"963.6666666666667,2096.9999999999995","size":"100,100"}
+OH NO, SOMEONE STOLE ZACH'S OYSTERS
+
+[[So?]]
+
+
+:: So? {"position":"963.6666666666667,2246.9999999999995","size":"100,100"}
+HE IS WILLING TO GIVE OUT CHEAT CODES IN HOMELESS SIMULATOR TO THE PEAESON WHO FINDS IT!
+
+[[$-$]]
+
+
+:: $-$ {"position":"963.6666666666667,2396.9999999999995","size":"100,100"}
+where shall i look 
+
+[[the trash]]
+
+[[my own head]]
+
+
+:: the trash {"position":"888.6666666666667,2546.9999999999995","size":"100,100"}
+I see......... I see calvin looking at meems
+
+
+[[EEK!]]
+
+
+:: my own head {"position":"1038.6666666666667,2546.9999999999995","size":"100,100"}
+But its not your own head
+
+
+:: EEK! {"position":"812.0000000000001,2811.9999999999995","size":"100,100"}
+where next?
+
+[[my own head]] 
+
+[[Ask calvin]]
+
+
+:: Ask calvin {"position":"812.0000000000001,2961.9999999999995","size":"100,100"}
+Cybertruks are memes
+
+[[uhhhhhh]]
+
+
+:: uhhhhhh {"position":"810.3333333333335,3115.333333333333","size":"100,100"}
+Timmy failure jumps out in a sumo suit saying, "LIES MENDAICTY"
+
+
+[[NO MORE]]
+
+
+:: NO MORE {"position":"1145.3333333333335,3155.333333333333","size":"100,100"}
+so you wanna quit?
+
+[[YES|Start]] 
+[[no thanks]]
+
+
+:: no thanks {"position":"1218.6666666666667,3478.666666666666","size":"100,100"}
+ok [[Click here to change diminisions]]
+
+
+:: Click here to change diminisions {"position":"1553.6666666666667,3651.9999999999995","size":"100,100"}
+NOT OK, NOT OK, STAY IN YOUR DIMINSION!
+
+[[restart|Start]]
+
+[[im done]]
+
+
+:: im done {"position":"1553.6666666666667,3801.9999999999995","size":"100,100"}
+before you go please email zmdvorkin@gmail.com for bugs or sugestions!
+
+

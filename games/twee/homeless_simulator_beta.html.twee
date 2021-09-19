@@ -1,0 +1,234 @@
+:: StoryTitle
+Homeless Survival
+
+
+:: StoryData
+{
+	"ifid": "E81CDBD2-CBD7-43FB-B9F8-87BC8650EEDC",
+	"format": "SugarCube",
+	"format-version": "2.30.0",
+	"start": "Start",
+	"zoom": 1
+}
+
+
+:: StoryInit {"position":"100,100","size":"100,100"}
+<<set $_dollars_to_win = 40>>
+<<set $_total_dollars = random(10,25)>>
+<<set $_total_energy = 3>>
+<<set $_pray_probability_nothing_happens = 20>>
+<<set $_pray_probability_angry = 10 >>
+<<set $_pray_probability_double_money =  10 >>
+
+
+:: PassageHeader {"position":"225,100","size":"100,100"}
+<<nobr>>
+/*
+    Secret mode will leave variables as strings, so force convert them to integers.
+*/
+<<script>>
+let vars =  State.variables;
+console.log(vars);
+for (var v in vars) {
+    /* If variable is a number, convert it to a number*/
+    let value =  vars[v];
+
+    if (!isNaN(Number(value))) {
+        vars[v] = Number(value)
+    }
+
+}
+<</script>>
+<</nobr>>
+You have $_total_dollars dollars, and $_total_energy energy. You'll need $_dollars_to_win dollars to win the game.
+----
+
+
+:: PassageFooter {"position":"350,100","size":"100,100"}
+----
+Copyright Zacookie St[[u|p_debug]]dios
+----
+
+
+:: Start {"position":"475,100","size":"100,100"}
+You were in a company but the CEO made some bad decisions and everything went down hill. You are now homeless, please select easy mode or hard mode.
+
+[[easy mode]]
+[[hard mode]]
+
+
+:: easy mode {"position":"600,100","size":"100,100"}
+Are you new?
+
+[[Yes|tutorial]]
+[[No|the bench]]
+
+
+:: hard mode {"position":"725,100","size":"100,100"}
+this mode is still in the makeing :)
+[[easy mode]]
+
+
+:: tutorial {"position":"850,100","size":"100,100"}
+Hi, My name is Bill I will give you many choses to become rich,poor or avrege with lifes wealth. There are multiple endings, Please know that this is in early access, new updates will be coming soon.
+
+[[begin|the bench]]
+
+
+:: the bench {"position":"994,108","size":"100,100"}
+You're in a park. There is a bench. You can:
+
+<<nobr>>
+<<if $_total_dollars gt $_dollars_to_win>>
+    Congrats you [[winned]]!
+<<else>>
+    [[beg]]   [[Read the sign]]
+    [[sleep]]
+    [[pray]]
+<</if>>
+<</nobr>>
+
+
+:: pray {"position":"1100,100","size":"100,100"}
+You pray ...
+<<nobr>>
+<<set _total = ($_pray_probability_double_money + $_pray_probability_angry + $_pray_probability_nothing_happens)>>
+<<set _event = random(_total) >>
+<<if _event lt $_pray_probability_angry>>
+God gets mad, and you lose all your money.
+<<set $_total_dollars to 0>>
+<<elseif _event lt ($_pray_probability_angry + $_pray_probability_double_money)>>
+God smiles, and you double your money!
+<<set $_total_dollars to $_total_dollars * 2>>
+<<else>>
+Nothing happens.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: sleep {"position":"1225,100","size":"100,100"}
+You fall asleep on the bench. It's not very comfortable, but you don't have much of a choice.
+
+<<nobr>>
+<<set $event to random(3) >>
+
+<<if $event eq 0>>
+The police came to your bench and hit you on the head
+<<set $_total_energy to $_total_energy + 1>>
+<</if>>
+
+<<if $event eq 1>>
+An angry dog came and barked all night. You got no sleep.
+<<set $_total_energy to 1>>
+<</if>>
+
+<<if $event eq 2>>
+The deathtsar comes out of orbit and blows you to bits.
+<<set $_total_energy to 0>>
+<</if>>
+
+<<if $event eq 3>>
+You got lucky, and got a good night of sleep
+<<set $_total_energy to 8>>
+<</if>>
+<</nobr>>
+
+You got a total of $_total_energy hours of sleep.
+<<return "go back">>
+
+
+:: beg {"position":"100,225","size":"100,100"}
+<<nobr>>
+<<if $_total_energy lte 1>>
+    You don't have energy to beg. Maybe you should get more sleep
+<<else>>
+    <<set $_total_energy to $_total_energy - 1>>
+    <<set $_dollars to random(1,5)>>
+    <<set $_total_dollars to $_total_dollars + $_dollars>>
+    Five people walk past you, you ask them for food or money. You get $_dollars dollars, which means you have $_total_dollars dollars all together.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: winned {"position":"225,225","size":"100,100"}
+Hooray - you're a winner! You're no longer homeless. Live your happy life, or try again by pressing restart.
+
+
+:: p_debug {"position":"350,225","size":"100,100"}
+<<script>>
+let vars =  State.variables;
+console.log(vars);
+for (var v in vars) {
+    console.log(v + " -> " + vars[v]);
+    let tb = `${v} <<textbox "$${v}" $${v}>>\n`
+    console.log(tb)
+    $(output).wiki(tb)
+}
+<</script>>
+<<return "Back to game">>
+
+
+:: Read the sign {"position":"2112,713","size":"100,100"}
+The sign has two jobs:
+
+
+
+[[Paper boy]]     
+  5$
+  5 Energy 
+
+
+
+[[Writer]]
+  8$                
+  8 Energy          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <<return "go back">>
+
+
+:: Paper boy {"position":"706,408","size":"100,100"}
+<<nobr>>
+<<if $_total_energy lte 5>>
+    You don't have energy to work ? Maybe you should get more sleep
+<<else>>
+    <<set $_total_energy to $_total_energy - 5>>
+    
+    <<set $_total_dollars to $_total_dollars + 5>>
+    You get 5  dollars, which means you have $_total_dollars dollars all together.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: Writer {"position":"702,713","size":"100,100"}
+<<nobr>>
+<<if $_total_energy lte 9>>
+    You don't have energy to work ? Maybe you should get more sleep
+<<else>>
+    <<set $_total_energy to $_total_energy - 8>>
+    
+    <<set $_total_dollars to $_total_dollars + 9>>
+    You get 8  dollars, which means you have $_total_dollars dollars all together.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+

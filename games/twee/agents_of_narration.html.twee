@@ -1,0 +1,374 @@
+:: StoryTitle
+Agents of Narration HQ (Companion to MT:TROJ)
+
+
+:: StoryData
+{
+	"ifid": "B878E42C-8DE0-4629-8D76-CD3708D74B63",
+	"format": "Chapbook",
+	"format-version": "1.2.1",
+	"start": "Init",
+	"zoom": 1
+}
+
+
+:: Init {"position":"372,15","size":"100,100"}
+power: power = false
+name: name = ""
+config.header.right: ""
+config.footer.right: "[[Restart Game|Init]]"
+--
+
+Welcome to narration HQ
+
+[[Start Game|Start]]
+
+[[Fallen Heros|Credits]]
+
+
+:: Start {"position":"315,150","size":"100,100"}
+Hello agent {text input for: 'name'}, welcome to naration HQ.
+
+[[Continue|Start1]]
+
+
+
+
+
+
+
+
+*Taking over meme town is possible if you feel powerful enough*
+
+
+:: Credits {"position":"423,150","size":"100,100"}
+To all the heros of this world, we must be thankful.
+
+Zach - Creator of the story and game, plus VERY EPIC
+
+Everyone else - did something
+
+[[Return|Init]]
+
+
+:: Start1 {"position":"302,299","size":"100,100"}
+You see, narration HQ controls how storys go. Who dies, what is the new world order, what does the person 10 miles away from the gas station past that park no one goes to because it smells like dog farts have for breakfast? All of that and more is handled here. And now, you agent {name} will also join our ranks!
+
+[[Continue|Start2]]
+
+
+:: Start2 {"position":"419,298","size":"100,100"}
+All agents are required to go through an apprenticeship program before they are granted there full agent privileges. Your asigned teacher is Agent Christopher, he will talk with you soon. 
+
+[[Copy that|HandCuffedGirl1]]
+
+
+:: HandCuffedGirl1 {"position":"523,296","size":"100,100"}
+As you enter the imposing crimson hallways of the CMS department, you realise what your life had became. You are in the most powerful place in the universe, and one day you might even run it. On the way to Agent Christopher's office, you spot a group of men dressed in pure black armor, carrying what seemed to be weapons. They were escorting a small child that seemed to be in some of sort of handcuffs. 
+
+[[I knew that it was best not to get involved, these were powerful people|MeetAgentChristopher]]
+
+[[They had a good reason, of course they did|MeetAgentChristopher]]
+
+[[The girl looked so sad, I'm gonna ask them to stop|HandCuffedGirlAsk]]
+
+[[Those idiots were imprisoning a kid, I'll fight them!|HandCuffGirlFight]]
+
+
+:: MeetAgentChristopher {"position":"642,299","size":"100,100"}
+You walked past the men, and after a seemingly endless amount of walking made it to Agent Christopher's office. He was a tall white man, seemed to be in his mid twentys. He wore a dark suit and had blonde hair. His office didnt stray far from his style, dark oak panneling with a grand desk and chair. "Hello agent {name}, I am Agent Christopher. I am going to be the Agent in charge of your training." 
+
+[[What am I going to be doing as an agent in training?]]
+
+[[dfsknlfdkfjgvrwjnvgtrer.tfslfdjjfgjflfgd|HeartAttack]]
+
+
+:: HandCuffedGirlAsk {"position":"641,185","size":"100,100"}
+The men didnt even pretend to care about your concern. "Move recruit, or we're going to move you to the mourge"
+
+[[I'd like to see them try|Die]]
+
+[[Oh well|MeetAgentChristopher]]
+
+
+:: HandCuffGirlFight {"position":"530,182","size":"100,100"}
+As soon as you put up your fist to punch them, a bullet went through your head. You didnt achive anything other then your own death, and the kid seemed to be laughing. Or at least you think thats what you saw through the blood. Maybe attacking them when your brand new to the job isnt smart?
+
+[[Continue|Die]]
+
+
+:: Die {"position":"261,18","size":"100,100"}
+Well, it was (hopefully) a good run, but your dead now. That or something else bad ended your career.
+
+[[Restart|Init]]
+
+
+:: What am I going to be doing as an agent in training? {"position":"645,403","size":"100,100"}
+"Your going to be controlling a basic story with supervision. If you complete it successfully, you will be granted the rank of Agent and a more complex story." Agent Christopher said. "Do you need more information?"
+
+[[Yes|What am I going to be doing as an agent in training?MoreInfo]] 
+
+[[No|WelcomeToMemeTown]]
+
+
+:: HeartAttack {"position":"641,76","size":"100,100"}
+You appear to be having a heart attack.
+
+[[*Dies*|Die]]
+
+
+:: What am I going to be doing as an agent in training?MoreInfo {"position":"539,406","size":"100,100"}
+He hands you a file, it tells you: 
+Task 1: Manage a simple story
+Task 2: Keep the reader entertained
+
+[[I'm ready to begin|WelcomeToMemeTown]]
+
+
+:: WelcomeToMemeTown {"position":"435,407","size":"100,100"}
+"Very good agent {name}, your selected story is called Meme Town: The Rise Of Joe" He hands you a file which reads: 
+MT:TROJ contains a clasic novel structure with a comedic premise, starring slouchy joe or as he's commonly known as, joe. Joe discovers the secrets of his town (Meme Town) and must defeat the leader of Meme Town, who calls himself the Grand Pyramid. All goes to plan and the day is saved."
+
+[[I'm ready to start|MemeTownControllerStart]]
+
+
+:: MemeTownControllerStart {"position":"333,409","size":"100,100"}
+Suddenly the floor opened up, and swallowed the floor beneath you up. Oddly enough, Agent Christopher was no where to be found. You fell onto a platform that started to decend, then something slid over the top of it. When the platform stoped moving, a wall slid open. It opened to a pure black room, the walls were full of glass dots. As you steped into the room, the glass dots revealed themselves to be projectors. Using technology that probably shouldn't exsist, a hologram of a town appeared. When you saw all of it, you felt:
+
+[[Powerful, you were about to be put in charge of an entire reality!|MemeTownPower]]
+
+[[Scared, what if you messed up?|MemeTownScared]]
+
+[[Confused, what on earth was going on here?!?|MemeTownConfused]]
+
+[[Determined, you were going to do it right!|MemeTownDetermined]]
+
+
+:: MemeTownPower {"position":"219,414","size":"100,100"}
+power: power = true
+--
+You started to think more about the possibilities, maybe you could even rule a universe! But that would have to wait, after all there was work to be done. But now you must wonder, how far will you go?
+
+[[Only time can tell|MemeTownControler]]
+
+[[Only the amount of corpses left in my wake can tell, OH WAIT THEY CANT BECAUSE THERE DEAD! *evil laugh*|MemeTownControler]]
+
+
+:: MemeTownScared {"position":"201,301","size":"100,100"}
+You were so scared you died
+
+[[Wait what|Die]]
+
+
+:: MemeTownConfused {"position":"86,303","size":"100,100"}
+This mess made no sense, these people seem like weirdos! I'm going to quit....
+
+[[I retire!|Die]]
+
+
+:: MemeTownDetermined {"position":"394,515","size":"100,100"}
+power: power = false
+--
+Things were going to go swell, you could handle it. You had to wonder though, what if they didnt? What if it failed? But with you in charge, everything was fine.
+
+[[Yep!|MemeTownControler]]
+
+
+:: MemeTownControler {"position":"270,538","size":"100,100"}
+The town was moving, people running about and stuff happening. When you made a zooming in motion, you got closer to the ground. You decided to view:
+
+[[The house of the main character|MemeTownHouse]]
+
+[[The school, I think thats important|MemeTownSchool]]
+
+[[The interview room|MemeTownLibrary]]
+
+[[I follow the main character, I want to see the story|MemeTownStoryPart1]]
+
+
+:: MemeTownHouse {"position":"72,429","size":"100,100"}
+The main character's house was small but cozy, 2 floors and a basement. Joe seemed to be sleeping, and so were his parents, it must have been night time O clock.
+
+[[I left the house|MemeTownControler]]
+
+[if power]
+[[I put some chemicals in there food|MemeTownControler]]
+
+
+:: MemeTownSchool {"position":"146,543","size":"100,100"}
+The school seemed like a typical run of the mill school, something you might even find                 . Although there was a strange door with a pryamid on it.
+
+[[I continue on my way|MemeTownControler]]
+
+[[I wonder what's behind that door....|MemeTownSchoolDoor]]
+
+
+:: MemeTownLibrary {"position":"0,650","size":"100,100"}
+The library was empty except for a discusting receptionist. Other then the bookshelves and a weird door, nothing was really there.
+
+[[I move on|MemeTownControler]]
+
+
+:: MemeTownStoryPart1 {"position":"348,645","size":"100,100"}
+After a bit of waiting, the sun seemed to rise. Joe got into a strange green vehicle, it was green and seemed to be playing a kind of repeating music, and it smelled like farts? It took him to the school, where he seemed to be taking some kind of test. You really arent supposed to, but you could cause some drama and unlock the door.....
+
+[[I will unlock it|MemeTownSchoolUnlock]]
+
+[[I'm sticking to the rules|MemeTownSchoolLock]]
+
+
+:: MemeTownSchoolDoor {"position":"0,532","size":"100,100"}
+Inside was a strange room, there was a computer connected to a massive screen, a keyboard and mouse but also a book. It was a school, but even then it was weird fot it to be such a fancy book. And was that a gold lock?
+
+[[I head back, confused|MemeTownSchool]]
+
+
+:: MemeTownSchoolUnlock {"position":"488,635","size":"100,100"}
+Then joe went in, and he read that book. You werent sure if that was a good thing, but then what could you do? Well you could:
+
+[[I do nothing, hopefully things will work out|MemeTownDoNothingFail]]
+
+[[I try to set the story back on track and deploy the military|MemeTownStoryContinues27]]
+
+[if power]
+[[I enter the world myself|EnterMemeTown1]]
+
+
+:: MemeTownSchoolLock {"position":"226,658","size":"100,100"}
+And so the world continued on as usual, nothing exciting ever happend. After what seems like forever, people in dark black armor (Which matched the color of the walls) came in. 
+
+[[And I was never seen from again|Die]]
+[if power]
+
+[[I happen to have taken some classes in martial arts|MemeTownSchoolLockFail]]
+
+
+:: MemeTownSchoolLockFail {"position":"106,650","size":"100,100"}
+Havent taken enough though
+
+[[And I was never seen from again|Die]]
+
+
+:: MemeTownDoNothingFail {"position":"608,625","size":"100,100"}
+And so the world continued on as usual, nothing exciting ever happend. After what seems like forever, people in dark black armor (Which matched the color of the walls) came in. 
+
+[[And I was never seen from again|Die]]
+
+
+:: MemeTownStoryContinues27 {"position":"488,747","size":"100,100"}
+You made up some acronyn for a spy agency, created some agents that fit the style of meme town. They interrogated joe, and it seemed like it could be a good transition point. As soon as joe was released, he ran so fast the roads were set on fire. Also the fire department put an old lady in the ocean to drown. Things are getting out of hand, you could roll with it or just replace it with a more standard story.
+
+[[I roll with it, joe could use the machine to destroy the grand pryamid, perfect ending|MemeTownStoryContinues]]
+
+[[I revert it back to the original plot, effectively destroying everything unique about the story|MemeTownDoNothingFail]]
+
+
+:: EnterMemeTown1 {"position":"497,527","size":"100,100"}
+You werent going to trust anyone but yourself to fix this, and you were counting your digital pointer as someone else. After clicking a few buttons marked "**HIGHLY UNSAFE DONT USE!!!**", you were in.
+
+[[Finally|EnterMemeTownJoe'sHouse]]
+
+
+:: MemeTownStoryContinues {"position":"488,862","size":"100,100"}
+You give joe some gear for a raid on the room where they are keeping the machine. You give him subtle hints to use the computer. In the book he read, it said something about how the great pyramid was evil, you used that to convince joe. To make it intresting, you also had the spy people from before guarding the place. But somehow he defeats them with little to no outside help from you *wink wink*.
+
+[[Time to defeat this pyramid|WhatIsACordinate?]]
+
+
+:: WhatIsACordinate? {"position":"492,966","size":"100,100"}
+It's time for the end of the story, everything had building up to this.
+
+[[I'm ready|WhatIsACordinateRealThisTime?]]
+
+
+:: WhatIsACordinateRealThisTime? {"position":"350,921","size":"100,100"}
+Theres one issue, joe doesnt know what a cordinate is. The door opens people in black armor arive, they have there guns drawn, which looked like P-90s. You could die very fast.
+
+[[I have to finish the story!|SaveTheStory!]]
+
+[[I'm screwed! I'll surrender, then I might not die|You were wrong about that]]
+
+[[I'll fight them!|Your no match for them]]
+
+[[NDSSFFfdsofkjqsla.skdfjholdfherkpsfahhulfhawospu9fjeaiosfdhausdfd|HeartAttack]]
+
+
+:: SaveTheStory! {"position":"240,922","size":"100,100"}
+In a last ditch effort to save the story, you drop something in front of joe before the guards handcuff you, what did you put in that book?
+
+[[How to use the machine!|YayGoodEnding]]
+
+[[Nothing LOL!|QuestionableEnding]]
+
+
+:: You were wrong about that {"position":"350,1071","size":"100,100"}
+Turns out they could care less
+
+[[*Dies*|Die]]
+
+
+:: Your no match for them {"position":"460,1068","size":"100,100"}
+Should really have taken some more martial arts classes.
+
+[[*Dies*|Die]]
+
+
+:: YayGoodEnding {"position":"165,1072","size":"100,100"}
+He reads the book, and the grand pyramid is no more. Your captors look as the hologram, astonished at what they could see. "Very well Agent {name}, you have passed." To celebrate you:
+
+[[Poop on the floor|QuestionableEnding]]
+
+[[Have a party|Party]]
+
+[[Go back in time to see what else you could have done|Init]]
+
+
+:: QuestionableEnding {"position":"127,920","size":"100,100"}
+I cant express my dissapointment. You get stared at so hard you disapear from existance.
+
+[[*Dissapears*|Die]]
+
+
+:: Party {"position":"165,1222","size":"100,100"}
+Oh wow its a party everyone is happy! *music plays*
+Wait a minute, ARE THOSE FORTNIGHT DANCES?!?!?!?
+
+[[You go back in time to correct your mistake|Init]]
+
+
+:: EnterMemeTownJoe'sHouse {"position":"617,505","size":"100,100"}
+As you arive at joe's house, a thought stikes you. "Maybe letting him continue would be the best way?" You could always go back, but you do have full control over the world your now in....
+
+[[I *deal with* joe|MemeTownDoNothingFail]]
+
+[[I leave joe alone, I'll deploy the military instead|MemeTownStoryContinues27]]
+
+[[I do have unlimited power here.... no one could stop me|TakeControlMemeTown]]
+
+
+:: TakeControlMemeTown {"position":"721,512","size":"100,100"}
+It's quite simple really, you just make it so your in charge. You can rule however you like, do anything! But your contrained to this small world....
+
+[[But if I ran Narration HQ I wouldn't be....]]
+
+
+:: But if I ran Narration HQ I wouldn't be.... {"position":"721,662","size":"100,100"}
+You used your powers to create tanks, weapons of mass destruction, millions of troops. But is it all worth it?
+
+[[YES|BEST ENDING]]
+
+[[No|QuestionableEnding]]
+
+
+:: BEST ENDING {"position":"721,812","size":"100,100"}
+You now rule the entire universe, your power is unlimited.
+
+[[PARTY TIME!|Party]]
+
+[[But.....]]
+
+
+:: But..... {"position":"721,962","size":"100,100"}
+[[What if this was just a story in another Narratio-|Die]]
+
+

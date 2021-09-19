@@ -1,0 +1,37 @@
+:: StoryTitle
+DieDieDie
+
+
+:: StoryData
+{
+	"ifid": "EB1C327C-87F7-4509-8FBE-40F803E2DB06",
+	"format": "SugarCube",
+	"format-version": "2.21.0",
+	"start": "Start",
+	"zoom": 1
+}
+
+
+:: Start {"position":"2377.5,176","size":"100,100"}
+Do you want to 
+<<set $die to 0>>
+[[die]]
+
+
+:: die {"position":"1229.5,739","size":"100,100"}
+[[die again]]
+
+
+<<set $die to $die +1>>
+
+You've died $die times
+
+<<if $die eq 5>>
+Hooray - you're a poopy head.
+<</if>>
+
+
+:: die again {"position":"756,28","size":"100,100"}
+[[die]]
+
+

@@ -1,0 +1,2994 @@
+:: StoryTitle
+Valentines Day
+
+
+:: StoryData
+{
+	"ifid": "4D190E2B-8352-420F-8ED4-A7DE71786929",
+	"format": "SugarCube",
+	"format-version": "2.30.0",
+	"start": "0",
+	"zoom": 1
+}
+
+
+:: Init {"position":"615,107","size":"100,100"}
+money:30
+health:100
+level:1
+ToolShopUnlock:false
+ReadMazeBook:false
+MazeWentBack:false
+MazeVaultOpen:false
+HasTreasureX:false
+HasShovel:false
+DefeatCobra1:false
+ShakeShackStaff:false
+BuiltCampsiteBridge1:false
+TreasureHuntJob1:false
+BeatLordMapleFirstBossFight1:false
+LordMapleBossFightDamage1:0
+MineKeyCardDoorCodeUnlocked:false
+config.header.right: "Level: {level}   Money:{money}   Health:{health}"
+config.footer.right: "[[Restart|Init]] Go to [[Gamer Shop|GamerShop]]"
+--
+
+[[Begin the adventure|Start]]
+
+
+:: Start {"position":"537,248","size":"100,100"}
+--
+**Welcome to the jungle**
+
+The jungle and grocery is a scary place where people eat animals, animals eat people and mothers cry at night.
+
+
+[if level === 1 ]
+Hi new player
+[if level === 2 ]
+You are a mage - congrats
+[if level === 3 ]
+dang man thats kinda epic
+[if level === 4]
+You must love the game
+[if level === 5]
+Like my flavor text?
+[if level === 6]
+You have achived knighthood
+[if level === 7 ]
+Well now your an epic mage
+[if level === 8 ]
+You have some serious dedication if your already level 8
+[if level === 9 ]
+Ok you love this game confirmed
+[if level === 10]
+Ok well you did something quite epic
+
+[continue]
+
+>  [[Turn right and go to the deep jungle|deepjungle]]
+>  [[Turn left and go to the grocery|grocery]]
+
+
+:: Credits {"position":"423,150","size":"100,100"}
+To all the heros of this world, we must be thankful.
+
+Zach - Creator of the story and game, plus VERY EPIC
+
+Everyone else - did something
+
+[[Return|Init]]
+
+
+:: Start1 {"position":"302,299","size":"100,100"}
+You see, narration HQ controls how storys go. Who dies, what is the new world order, what does the person 10 miles away from the gas station past that park no one goes to because it smells like dog farts have for breakfast? All of that and more is handled here. And now, you agent {name} will also join our ranks!
+
+[[Continue|Start2]]
+
+
+:: Start2 {"position":"419,298","size":"100,100"}
+All agents are required to go through an apprenticeship program before they are granted there full agent privileges. Your asigned teacher is Agent Christopher, he will talk with you soon. 
+
+[[Copy that|HandCuffedGirl1]]
+
+
+:: HandCuffedGirl1 {"position":"523,296","size":"100,100"}
+As you enter the imposing crimson hallways of the CMS department, you realise what your life had became. You are in the most powerful place in the universe, and one day you might even run it. On the way to Agent Christopher's office, you spot a group of men dressed in pure black armor, carrying what seemed to be weapons. They were escorting a small child that seemed to be in some of sort of handcuffs. 
+
+[[I knew that it was best not to get involved, these were powerful people|MeetAgentChristopher]]
+
+[[They had a good reason, of course they did|MeetAgentChristopher]]
+
+[[The girl looked so sad, I'm gonna ask them to stop|HandCuffedGirlAsk]]
+
+[[Those idiots were imprisoning a kid, I'll fight them!|HandCuffGirlFight]]
+
+
+:: MeetAgentChristopher {"position":"642,299","size":"100,100"}
+You walked past the men, and after a seemingly endless amount of walking made it to Agent Christopher's office. He was a tall white man, seemed to be in his mid twentys. He wore a dark suit and had blonde hair. His office didnt stray far from his style, dark oak panneling with a grand desk and chair. "Hello agent {name}, I am Agent Christopher. I am going to be the Agent in charge of your training." 
+
+[[What am I going to be doing as an agent in training?]]
+
+[[dfsknlfdkfjgvrwjnvgtrer.tfslfdjjfgjflfgd|HeartAttack]]
+
+
+:: HandCuffedGirlAsk {"position":"641,185","size":"100,100"}
+The men didnt even pretend to care about your concern. "Move recruit, or we're going to move you to the mourge"
+
+[[I'd like to see them try|Die]]
+
+[[Oh well|MeetAgentChristopher]]
+
+
+:: HandCuffGirlFight {"position":"530,182","size":"100,100"}
+As soon as you put up your fist to punch them, a bullet went through your head. You didnt achive anything other then your own death, and the kid seemed to be laughing. Or at least you think thats what you saw through the blood. Maybe attacking them when your brand new to the job isnt smart?
+
+[[Continue|Die]]
+
+
+:: Die {"position":"261,18","size":"100,100"}
+Well, it was (hopefully) a good run, but your dead now. That or something else bad ended your career.
+
+[[Restart|Init]]
+
+
+:: What am I going to be doing as an agent in training? {"position":"645,403","size":"100,100"}
+"Your going to be controlling a basic story with supervision. If you complete it successfully, you will be granted the rank of Agent and a more complex story." Agent Christopher said. "Do you need more information?"
+
+[[Yes|What am I going to be doing as an agent in training?MoreInfo]] 
+
+[[No|WelcomeToMemeTown]]
+
+
+:: HeartAttack {"position":"641,76","size":"100,100"}
+You appear to be having a heart attack.
+
+[[*Dies*|Die]]
+
+
+:: What am I going to be doing as an agent in training?MoreInfo {"position":"539,406","size":"100,100"}
+He hands you a file, it tells you: 
+Task 1: Manage a simple story
+Task 2: Keep the reader entertained
+
+[[I'm ready to begin|WelcomeToMemeTown]]
+
+
+:: WelcomeToMemeTown {"position":"435,407","size":"100,100"}
+"Very good agent {name}, your selected story is called Meme Town: The Rise Of Joe" He hands you a file which reads: 
+MT:TROJ contains a clasic novel structure with a comedic premise, starring slouchy joe or as he's commonly known as, joe. Joe discovers the secrets of his town (Meme Town) and must defeat the leader of Meme Town, who calls himself the Grand Pyramid. All goes to plan and the day is saved."
+
+[[I'm ready to start|MemeTownControllerStart]]
+
+
+:: MemeTownControllerStart {"position":"333,409","size":"100,100"}
+Suddenly the floor opened up, and swallowed the floor beneath you up. Oddly enough, Agent Christopher was no where to be found. You fell onto a platform that started to decend, then something slid over the top of it. When the platform stoped moving, a wall slid open. It opened to a pure black room, the walls were full of glass dots. As you steped into the room, the glass dots revealed themselves to be projectors. Using technology that probably shouldn't exsist, a hologram of a town appeared. When you saw all of it, you felt:
+
+[[Powerful, you were about to be put in charge of an entire reality!|MemeTownPower]]
+
+[[Scared, what if you messed up?|MemeTownScared]]
+
+[[Confused, what on earth was going on here?!?|MemeTownConfused]]
+
+[[Determined, you were going to do it right!|MemeTownDetermined]]
+
+
+:: MemeTownPower {"position":"219,414","size":"100,100"}
+power: power = true
+--
+You started to think more about the possibilities, maybe you could even rule a universe! But that would have to wait, after all there was work to be done. But now you must wonder, how far will you go?
+
+[[Only time can tell|MemeTownControler]]
+
+[[Only the amount of corpses left in my wake can tell, OH WAIT THEY CANT BECAUSE THERE DEAD! *evil laugh*|MemeTownControler]]
+
+
+:: MemeTownScared {"position":"201,301","size":"100,100"}
+You were so scared you died
+
+[[Wait what|Die]]
+
+
+:: MemeTownConfused {"position":"86,303","size":"100,100"}
+This mess made no sense, these people seem like weirdos! I'm going to quit....
+
+[[I retire!|Die]]
+
+
+:: MemeTownDetermined {"position":"394,515","size":"100,100"}
+power: power = false
+--
+Things were going to go swell, you could handle it. You had to wonder though, what if they didnt? What if it failed? But with you in charge, everything was fine.
+
+[[Yep!|MemeTownControler]]
+
+
+:: MemeTownControler {"position":"270,538","size":"100,100"}
+The town was moving, people running about and stuff happening. When you made a zooming in motion, you got closer to the ground. You decided to view:
+
+[[The house of the main character|MemeTownHouse]]
+
+[[The school, I think thats important|MemeTownSchool]]
+
+[[The interview room|MemeTownLibrary]]
+
+[[I follow the main character, I want to see the story|MemeTownStoryPart1]]
+
+
+:: MemeTownHouse {"position":"72,429","size":"100,100"}
+The main character's house was small but cozy, 2 floors and a basement. Joe seemed to be sleeping, and so were his parents, it must have been night time O clock.
+
+[[I left the house|MemeTownControler]]
+
+[if power]
+[[I put some chemicals in there food|MemeTownControler]]
+
+
+:: MemeTownSchool {"position":"146,543","size":"100,100"}
+The school seemed like a typical run of the mill school, something you might even find                 . Although there was a strange door with a pryamid on it.
+
+[[I continue on my way|MemeTownControler]]
+
+[[I wonder what's behind that door....|MemeTownSchoolDoor]]
+
+
+:: MemeTownLibrary {"position":"0,650","size":"100,100"}
+The library was empty except for a discusting receptionist. Other then the bookshelves and a weird door, nothing was really there.
+
+[[I move on|MemeTownControler]]
+
+
+:: MemeTownStoryPart1 {"position":"348,645","size":"100,100"}
+After a bit of waiting, the sun seemed to rise. Joe got into a strange green vehicle, it was green and seemed to be playing a kind of repeating music, and it smelled like farts? It took him to the school, where he seemed to be taking some kind of test. You really arent supposed to, but you could cause some drama and unlock the door.....
+
+[[I will unlock it|MemeTownSchoolUnlock]]
+
+[[I'm sticking to the rules|MemeTownSchoolLock]]
+
+
+:: MemeTownSchoolDoor {"position":"0,532","size":"100,100"}
+Inside was a strange room, there was a computer connected to a massive screen, a keyboard and mouse but also a book. It was a school, but even then it was weird fot it to be such a fancy book. And was that a gold lock?
+
+[[I head back, confused|MemeTownSchool]]
+
+
+:: MemeTownSchoolUnlock {"position":"488,635","size":"100,100"}
+Then joe went in, and he read that book. You werent sure if that was a good thing, but then what could you do? Well you could:
+
+[[I do nothing, hopefully things will work out|MemeTownDoNothingFail]]
+
+[[I try to set the story back on track and deploy the military|MemeTownStoryContinues27]]
+
+[if power]
+[[I enter the world myself|EnterMemeTown1]]
+
+
+:: MemeTownSchoolLock {"position":"226,658","size":"100,100"}
+And so the world continued on as usual, nothing exciting ever happend. After what seems like forever, people in dark black armor (Which matched the color of the walls) came in. 
+
+[[And I was never seen from again|Die]]
+[if power]
+
+[[I happen to have taken some classes in martial arts|MemeTownSchoolLockFail]]
+
+
+:: MemeTownSchoolLockFail {"position":"106,650","size":"100,100"}
+Havent taken enough though
+
+[[And I was never seen from again|Die]]
+
+
+:: MemeTownDoNothingFail {"position":"608,625","size":"100,100"}
+And so the world continued on as usual, nothing exciting ever happend. After what seems like forever, people in dark black armor (Which matched the color of the walls) came in. 
+
+[[And I was never seen from again|Die]]
+
+
+:: MemeTownStoryContinues27 {"position":"488,747","size":"100,100"}
+You made up some acronyn for a spy agency, created some agents that fit the style of meme town. They interrogated joe, and it seemed like it could be a good transition point. As soon as joe was released, he ran so fast the roads were set on fire. Also the fire department put an old lady in the ocean to drown. Things are getting out of hand, you could roll with it or just replace it with a more standard story.
+
+[[I roll with it, joe could use the machine to destroy the grand pryamid, perfect ending|MemeTownStoryContinues]]
+
+[[I revert it back to the original plot, effectively destroying everything unique about the story|MemeTownDoNothingFail]]
+
+
+:: EnterMemeTown1 {"position":"497,527","size":"100,100"}
+You werent going to trust anyone but yourself to fix this, and you were counting your digital pointer as someone else. After clicking a few buttons marked "**HIGHLY UNSAFE DONT USE!!!**", you were in.
+
+[[Finally|EnterMemeTownJoe'sHouse]]
+
+
+:: MemeTownStoryContinues {"position":"488,862","size":"100,100"}
+You give joe some gear for a raid on the room where they are keeping the machine. You give him subtle hints to use the computer. In the book he read, it said something about how the great pyramid was evil, you used that to convince joe. To make it intresting, you also had the spy people from before guarding the place. But somehow he defeats them with little to no outside help from you *wink wink*.
+
+[[Time to defeat this pyramid|WhatIsACordinate?]]
+
+
+:: WhatIsACordinate? {"position":"492,966","size":"100,100"}
+It's time for the end of the story, everything had building up to this.
+
+[[I'm ready|WhatIsACordinateRealThisTime?]]
+
+
+:: WhatIsACordinateRealThisTime? {"position":"350,921","size":"100,100"}
+Theres one issue, joe doesnt know what a cordinate is. The door opens people in black armor arive, they have there guns drawn, which looked like P-90s. You could die very fast.
+
+[[I have to finish the story!|SaveTheStory!]]
+
+[[I'm screwed! I'll surrender, then I might not die|You were wrong about that]]
+
+[[I'll fight them!|Your no match for them]]
+
+[[NDSSFFfdsofkjqsla.skdfjholdfherkpsfahhulfhawospu9fjeaiosfdhausdfd|HeartAttack]]
+
+
+:: SaveTheStory! {"position":"240,922","size":"100,100"}
+In a last ditch effort to save the story, you drop something in front of joe before the guards handcuff you, what did you put in that book?
+
+[[How to use the machine!|YayGoodEnding]]
+
+[[Nothing LOL!|QuestionableEnding]]
+
+
+:: You were wrong about that {"position":"350,1071","size":"100,100"}
+Turns out they could care less
+
+[[*Dies*|Die]]
+
+
+:: Your no match for them {"position":"460,1068","size":"100,100"}
+Should really have taken some more martial arts classes.
+
+[[*Dies*|Die]]
+
+
+:: YayGoodEnding {"position":"165,1072","size":"100,100"}
+He reads the book, and the grand pyramid is no more. Your captors look as the hologram, astonished at what they could see. "Very well Agent {name}, you have passed." To celebrate you:
+
+[[Poop on the floor|QuestionableEnding]]
+
+[[Have a party|Party]]
+
+[[Go back in time to see what else you could have done|Init]]
+
+
+:: QuestionableEnding {"position":"127,920","size":"100,100"}
+I cant express my dissapointment. You get stared at so hard you disapear from existance.
+
+[[*Dissapears*|Die]]
+
+
+:: Party {"position":"165,1222","size":"100,100"}
+Oh wow its a party everyone is happy! *music plays*
+Wait a minute, ARE THOSE FORTNIGHT DANCES?!?!?!?
+
+[[You go back in time to correct your mistake|Init]]
+
+
+:: EnterMemeTownJoe'sHouse {"position":"617,505","size":"100,100"}
+As you arive at joe's house, a thought stikes you. "Maybe letting him continue would be the best way?" You could always go back, but you do have full control over the world your now in....
+
+[[I *deal with* joe|MemeTownDoNothingFail]]
+
+[[I leave joe alone, I'll deploy the military instead|MemeTownStoryContinues27]]
+
+[[I do have unlimited power here.... no one could stop me|TakeControlMemeTown]]
+
+
+:: TakeControlMemeTown {"position":"721,512","size":"100,100"}
+It's quite simple really, you just make it so your in charge. You can rule however you like, do anything! But your contrained to this small world....
+
+[[But if I ran Narration HQ I wouldn't be....]]
+
+
+:: But if I ran Narration HQ I wouldn't be.... {"position":"721,662","size":"100,100"}
+You used your powers to create tanks, weapons of mass destruction, millions of troops. But is it all worth it?
+
+[[YES|BEST ENDING]]
+
+[[No|QuestionableEnding]]
+
+
+:: BEST ENDING {"position":"721,812","size":"100,100"}
+You now rule the entire universe, your power is unlimited.
+
+[[PARTY TIME!|Party]]
+
+[[But.....]]
+
+
+:: But..... {"position":"721,962","size":"100,100"}
+[[What if this was just a story in another Narratio-|Die]]
+
+
+:: start {"position":"500,252","size":"100,100"}
+Hello welcome. Please enter your name so I know what to call you. 
+
+<<textbox "$name" "zach nuget">>
+
+[[welcome]]
+
+
+:: welcome {"position":"487,401","size":"100,100"}
+Hello $name first order off businnes we need a construction  crew so can you chose a contract.
+
+[[brian's buidlers]]
+[[maureens front loaders]]
+<img src="https://twinery.org/homepage/img/logo.svg" width="256" height="256">
+
+
+:: brian's buidlers {"position":"140,548","size":"100,100"}
+BRIANS BULDERS                                        
+
+
+workers:500
+
+productivity:250
+<<set $builders to 500>>
+
+<<set $productivity to 250>>
+
+Are you sure you want to use this contract?
+[[continue|build it]]
+[[no|welcome]]
+
+
+:: maureens front loaders {"position":"941,531","size":"100,100"}
+MAUREENS FRONT LOADERS
+					  
+workers:250
+
+productivity:500
+<<set $productivity to 500>>
+<<set $builders to 250>>
+<<set $front_load_key to 1>>
+
+
+
+[[continue|build it]]
+[[no|welcome]]
+
+
+:: build it {"position":"579,747","size":"100,100"}
+You've started with a productivity of $productivity and $builders builders. 
+lets buld something
+
+[[airport terminal]]
+
+[[road works]]
+
+
+:: airport terminal {"position":"504,897","size":"100,100"}
+<<set $_hours to 4>>
+
+Building will take $_hours hours
+
+<<set $_i to 0>>
+<<repeat 2s>>
+    <<set $_i to $_i+1>> <<set $_remaining to $_hours - $_i>>
+	Building in progress $_remaining hours to go.
+	    <<if $_i eq $_hours>> 		
+			The terminal is now built.
+			You can now build something [[again|build it]] 
+			<<stop>> 
+		<</if>> 
+<</repeat>>
+
+
+:: road works {"position":"654,897","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: die {"position":"1060,723.5","size":"100,100"}
+your dead start agen                                                                  [[restart]]
+
+
+:: die again {"position":"756,28","size":"100,100"}
+[[die]]
+
+
+:: StoryInit {"position":"100,100","size":"100,100"}
+<<set $_dollars_to_win = 40>>
+<<set $_total_dollars = random(10,25)>>
+<<set $_total_energy = 3>>
+<<set $_pray_probability_nothing_happens = 20>>
+<<set $_pray_probability_angry = 10 >>
+<<set $_pray_probability_double_money =  10 >>
+
+
+:: PassageHeader {"position":"225,100","size":"100,100"}
+<<nobr>>
+/*
+    Secret mode will leave variables as strings, so force convert them to integers.
+*/
+<<script>>
+let vars =  State.variables;
+console.log(vars);
+for (var v in vars) {
+    /* If variable is a number, convert it to a number*/
+    let value =  vars[v];
+
+    if (!isNaN(Number(value))) {
+        vars[v] = Number(value)
+    }
+
+}
+<</script>>
+<</nobr>>
+You have $_total_dollars dollars, and $_total_energy energy. You'll need $_dollars_to_win dollars to win the game.
+----
+
+
+:: PassageFooter {"position":"350,100","size":"100,100"}
+----
+Copyright Zacookie St[[u|p_debug]]dios
+----
+
+
+:: easy mode {"position":"600,100","size":"100,100"}
+Are you new?
+
+[[Yes|tutorial]]
+[[No|the bench]]
+
+
+:: hard mode {"position":"725,100","size":"100,100"}
+this mode is still in the makeing :)
+[[easy mode]]
+
+
+:: tutorial {"position":"850,100","size":"100,100"}
+Hi, My name is Bill I will give you many choses to become rich,poor or avrege with lifes wealth. There are multiple endings, Please know that this is in early access, new updates will be coming soon.
+
+[[begin|the bench]]
+
+
+:: the bench {"position":"994,108","size":"100,100"}
+You're in a park. There is a bench. You can:
+
+<<nobr>>
+<<if $_total_dollars gt $_dollars_to_win>>
+    Congrats you [[winned]]!
+<<else>>
+    [[beg]]   [[Read the sign]]
+    [[sleep]]
+    [[pray]]
+<</if>>
+<</nobr>>
+
+
+:: pray {"position":"1100,100","size":"100,100"}
+You pray ...
+<<nobr>>
+<<set _total = ($_pray_probability_double_money + $_pray_probability_angry + $_pray_probability_nothing_happens)>>
+<<set _event = random(_total) >>
+<<if _event lt $_pray_probability_angry>>
+God gets mad, and you lose all your money.
+<<set $_total_dollars to 0>>
+<<elseif _event lt ($_pray_probability_angry + $_pray_probability_double_money)>>
+God smiles, and you double your money!
+<<set $_total_dollars to $_total_dollars * 2>>
+<<else>>
+Nothing happens.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: sleep {"position":"1225,100","size":"100,100"}
+You fall asleep on the bench. It's not very comfortable, but you don't have much of a choice.
+
+<<nobr>>
+<<set $event to random(3) >>
+
+<<if $event eq 0>>
+The police came to your bench and hit you on the head
+<<set $_total_energy to $_total_energy + 1>>
+<</if>>
+
+<<if $event eq 1>>
+An angry dog came and barked all night. You got no sleep.
+<<set $_total_energy to 1>>
+<</if>>
+
+<<if $event eq 2>>
+The deathtsar comes out of orbit and blows you to bits.
+<<set $_total_energy to 0>>
+<</if>>
+
+<<if $event eq 3>>
+You got lucky, and got a good night of sleep
+<<set $_total_energy to 8>>
+<</if>>
+<</nobr>>
+
+You got a total of $_total_energy hours of sleep.
+<<return "go back">>
+
+
+:: beg {"position":"100,225","size":"100,100"}
+<<nobr>>
+<<if $_total_energy lte 1>>
+    You don't have energy to beg. Maybe you should get more sleep
+<<else>>
+    <<set $_total_energy to $_total_energy - 1>>
+    <<set $_dollars to random(1,5)>>
+    <<set $_total_dollars to $_total_dollars + $_dollars>>
+    Five people walk past you, you ask them for food or money. You get $_dollars dollars, which means you have $_total_dollars dollars all together.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: winned {"position":"225,225","size":"100,100"}
+Hooray - you're a winner! You're no longer homeless. Live your happy life, or try again by pressing restart.
+
+
+:: p_debug {"position":"350,225","size":"100,100"}
+<<script>>
+let vars =  State.variables;
+console.log(vars);
+for (var v in vars) {
+    console.log(v + " -> " + vars[v]);
+    let tb = `${v} <<textbox "$${v}" $${v}>>\n`
+    console.log(tb)
+    $(output).wiki(tb)
+}
+<</script>>
+<<return "Back to game">>
+
+
+:: Read the sign {"position":"2112,713","size":"100,100"}
+The sign has two jobs:
+
+
+
+[[Paper boy]]     
+  5$
+  5 Energy 
+
+
+
+[[Writer]]
+  8$                
+  8 Energy          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <<return "go back">>
+
+
+:: Paper boy {"position":"706,408","size":"100,100"}
+<<nobr>>
+<<if $_total_energy lte 5>>
+    You don't have energy to work ? Maybe you should get more sleep
+<<else>>
+    <<set $_total_energy to $_total_energy - 5>>
+    
+    <<set $_total_dollars to $_total_dollars + 5>>
+    You get 5  dollars, which means you have $_total_dollars dollars all together.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: Writer {"position":"702,713","size":"100,100"}
+<<nobr>>
+<<if $_total_energy lte 9>>
+    You don't have energy to work ? Maybe you should get more sleep
+<<else>>
+    <<set $_total_energy to $_total_energy - 8>>
+    
+    <<set $_total_dollars to $_total_dollars + 9>>
+    You get 8  dollars, which means you have $_total_dollars dollars all together.
+<</if>>
+<</nobr>>
+
+<<return "go back">>
+
+
+:: restart [restart] {"position":"1126,559.5","size":"100,100"}
+[[die]]                                                                                  [[poop]]
+
+
+:: poop {"position":"1216,717.5","size":"100,100"}
+you pooped horay                                                                       [[restart]]
+
+
+:: Untitled Passage {"position":"1064,613.5","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Shoot him with a gun {"position":"2707,800","size":"100,100"}
+He died. Nice work Mr. Know it all. 
+
+[[Restart |Start]]
+
+
+:: Set his bum on fire {"position":"2698,299","size":"100,100"}
+Congratulations Mr kind of knows it all, it smells like cooked poop, but our friend went to school. All we need to worry about is him stinking up the classroom. Your options are
+
+[[Bring cookies for the Teacher]]
+[[Get yelled at by the Teacher]]
+[[Get thrown in the dump]]
+
+
+:: Bring cookies for the Teacher {"position":"1865,371","size":"100,100"}
+it turns out shes allerigc, you die                                                   
+
+[[respaqwn|Start]]
+
+
+:: Get yelled at by the Teacher {"position":"1099,363","size":"100,100"}
+It turns out the teacher yells out her lungs. The substutes nose is cloged good job!
+
+[[Continue]]
+
+[[Give up|Start]]
+
+
+:: Get thrown in the dump {"position":"1831,66","size":"100,100"}
+Now you smell worse. Hopefully people don't think you're Igor.
+ 
+ 
+ [[Back|Set his bum on fire]]
+
+
+:: Continue {"position":"1125,1000","size":"100,100"}
+You wake up, you say to your self " $name, why didnt you make your valentines?"
+You then here your momas she asks, "Did you make your valentiens?"
+
+
+[[YES MOM|Lie]]
+
+[[NO MOM|Not lie]]
+
+
+:: Kill the swatt team {"position":"256,1281","size":"100,100"}
+The swatt team nukes your house! You are[[dead|Start]]
+
+
+:: Threaten the swatt team {"position":"897,1314","size":"100,100"}
+Oh no The swatt team dies because it is so stinky
+
+[[YaY!|Boo!]]
+
+
+:: Boo! {"position":"1069,1505.6666666666667","size":"100,100"}
+A elite team of hedgehogs is dispaspached with a mr. Clean mobile.
+
+[[Oh......]]
+
+[[die!!!!!]]
+
+
+:: Oh...... {"position":"992,1665.3333333333333","size":"100,100"}
+hey, im updating it so uhh 
+
+[[STOP TALKING, ME PLAY|pt 2]]
+
+
+:: die!!!!! {"position":"1187,1640","size":"100,100"}
+So they kill you[[:(|Start]]
+
+
+:: pt 2 {"position":"988.6666666666667,1815.3333333333333","size":"100,100"}
+after fighting the hedgehogs, you went back to school
+
+
+[[Continue| continue 2]]
+
+
+:: continue 2 {"position":"963.6666666666667,2096.9999999999995","size":"100,100"}
+OH NO, SOMEONE STOLE ZACH'S OYSTERS
+
+[[So?]]
+
+
+:: So? {"position":"963.6666666666667,2246.9999999999995","size":"100,100"}
+HE IS WILLING TO GIVE OUT CHEAT CODES IN HOMELESS SIMULATOR TO THE PEAESON WHO FINDS IT!
+
+[[$-$]]
+
+
+:: $-$ {"position":"963.6666666666667,2396.9999999999995","size":"100,100"}
+where shall i look 
+
+[[the trash]]
+
+[[my own head]]
+
+
+:: the trash {"position":"888.6666666666667,2546.9999999999995","size":"100,100"}
+I see......... I see calvin looking at meems
+
+
+[[EEK!]]
+
+
+:: my own head {"position":"1038.6666666666667,2546.9999999999995","size":"100,100"}
+But its not your own head
+
+
+:: EEK! {"position":"812.0000000000001,2811.9999999999995","size":"100,100"}
+where next?
+
+[[my own head]] 
+
+[[Ask calvin]]
+
+
+:: Ask calvin {"position":"812.0000000000001,2961.9999999999995","size":"100,100"}
+Cybertruks are memes
+
+[[uhhhhhh]]
+
+
+:: uhhhhhh {"position":"810.3333333333335,3115.333333333333","size":"100,100"}
+Timmy failure jumps out in a sumo suit saying, "LIES MENDAICTY"
+
+
+[[NO MORE]]
+
+
+:: NO MORE {"position":"1145.3333333333335,3155.333333333333","size":"100,100"}
+so you wanna quit?
+
+[[YES|Start]] 
+[[no thanks]]
+
+
+:: no thanks {"position":"1218.6666666666667,3478.666666666666","size":"100,100"}
+ok [[Click here to change diminisions]]
+
+
+:: Click here to change diminisions {"position":"1553.6666666666667,3651.9999999999995","size":"100,100"}
+NOT OK, NOT OK, STAY IN YOUR DIMINSION!
+
+[[restart|Start]]
+
+[[im done]]
+
+
+:: im done {"position":"1553.6666666666667,3801.9999999999995","size":"100,100"}
+before you go please email zmdvorkin@gmail.com for bugs or sugestions!
+
+
+:: 0 {"position":"1173,558","size":"100,100"}
+What is ye name?
+<<textbox "$name" "Grumpy Gus">>
+[[Done|1]]
+
+
+:: test {"position":"1180,729","size":"100,100"}
+$name
+
+
+:: smart! {"position":"1466,884","size":"100,100"}
+Well done! Although, I see something odd on the right side of the screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[You found me?]]
+
+
+:: nice job {"position":"1466,724","size":"100,100"}
+That was not to hard. Would you like to see something, more difficult[[?|smart!]]
+
+
+:: You found me? {"position":"1467,1032","size":"100,100"}
+The code is the creators birth date.
+<<textbox "$name1" "">>
+
+[[I have entered it]]
+
+
+:: I have entered it {"position":"1467,1181","size":"100,100"}
+Was it perhaps... 4/22?
+
+Your answer was $name1
+
+[[Advance]]
+
+
+:: $name1 {"position":"1467,1331","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: Advance {"position":"1586,1331","size":"100,100"}
+Hello, what can I get you?
+<<textbox "$name2" "">>
+
+[[Continue]]
+
+
+:: Fail {"position":"1180,1278.5","size":"100,100"}
+[[You have failed|Start]] Next time try a different letter.
+
+
+:: Suceed {"position":"1706,1632","size":"100,100"}
+The only way to beat this one, is to beat it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[Well]]
+
+
+:: Well {"position":"1706,1782","size":"100,100"}
+Hmmmmmmmmmmmmmm.
+
+
+:: Turn right and go to the jungle {"position":"363,587","size":"100,100"}
+Double-click this passage to edit it.
+
+
+:: deepjungle {"position":"486,404","size":"100,100"}
+money: money+random.d10
+--
+
+You found some money in the deep jungle
+
+[[Turn right|right]]
+
+[[Turn left|left]]
+
+[[Go back|Start]]
+
+
+:: grocery {"position":"598,400","size":"100,100"}
+Welcome to GamerGrocery
+
+Honestly don't buy from us I mean the [[Gamer Shop|GamerShop]] has pretty much everything nowadays.
+
+[[Why's that?|GamerShopExplained]]
+
+[[Go back|Start]]
+[if ToolShopUnlock === false]
+
+[[They dont have any tools though!|ToolQuestCheck]]
+
+
+:: right {"position":"481,519","size":"100,100"}
+[if DefeatCobra1 === false]
+You encounter a cobra, what do you do?
+
+[[Run away|deepjungle]]
+
+[[I'll fight it!|Fight]]
+
+[[I bought a cobra taming book at the grocery for 10 dollars!|tame]]
+[if DefeatCobra1 === true]
+You remember the time when you defeated that cobra
+
+[[Continue|2]]
+
+[[Go back|deepjungle]]
+
+
+:: left {"position":"270,351","size":"100,100"}
+You come apon a maze and a book, what do you do?
+
+[[Read the book|MazePath]]
+
+[[Enter the maze|MazeStart]]
+
+[[Turn back|deepjungle]]
+
+
+:: tame {"position":"569,626","size":"100,100"}
+money: money-10
+DefeatCobra1:true
+--
+Luckily, it worked. You made the cobra go somewhere else and you continued your trip.
+
+>  [[Continue|2]]
+
+
+:: Fight {"position":"691,661","size":"100,100"}
+health: health-50
+DefeatCobra1:true
+--
+Your able to defeat it, but it got quite a few bites in.
+
+>  [[Continue|2]]
+
+
+:: 2 {"position":"449,628","size":"100,100"}
+You come across a X, which makes you think something is buried beneath it, if you had a shovel you could probably dig it up...
+[if HasShovel === false]
+
+[[Move on and do nothing|continue34]]
+
+[[Go back|right]]
+[if HasShovel === true]
+
+[[I'll dig it up!|DigTreasureX]]
+
+[[Go back|right]]
+
+[[Keep on the trail|continue34]]
+
+
+:: continue34 {"position":"445,748","size":"100,100"}
+You see a great river and a wooden bridge, you could try to cross the bridge but you might fall off and hurt yourself.
+
+[[Turn back|2]]
+
+[[Cross the bridge|BridgeCrossing1]]
+
+[[Swim|SwimAcrossTheWater1]]
+
+
+:: GamerShop {"position":"888,246","size":"100,100"}
+Welcome to the Gamer Shop my friend!
+
+What would you like? I have quite a lot of intresting items!
+
+If you want to level up or purchase tools, just ask to see the prices!
+
+[if money > 0]
+[[Buy a level|LevelStore]]
+
+[[Go back|Start]]
+[if money > 45]
+
+[[Boost your stats|StatStore]]
+
+[[Go back|Start]]
+[if money > 99]
+
+[[Purchase a item|ItemStoreGate]]
+
+[[Go back|Start]]
+[if money === 0]
+You can't afford anything :(
+
+[[Go back|Start]]
+
+
+:: LevelStore {"position":"747,421","size":"100,100"}
+LevelCost (level === 1): 100
+LevelCost (level === 2): 500
+LevelCost (level === 3): 1000
+LevelCost (level === 4): 2000
+LevelCost (level === 5): 5000
+LevelCost (level === 6): 10000
+LevelCost (level === 7): 20000
+LevelCost (level === 8): 40000
+LevelCost (level === 9): 100000
+LevelCost (level === 10): 1000000
+--
+Your current level is:{level}
+
+The next level costs: ${LevelCost}
+[if money < LevelCost]
+
+Your not able to afford a new level :(
+
+[[Go Back|GamerShop]]
+
+[if money > LevelCost]
+
+You have enough for the next level!
+
+[[Buy|LevelStoreBuy]]
+
+[[Cancel|GamerShop]]
+[if money === LevelCost]
+
+You have enough for the next level!
+
+[[Buy|LevelStoreBuy]]
+
+[[Cancel|GamerShop]]
+
+
+:: StatStore {"position":"891,406","size":"100,100"}
+Your current health is {health}
+
+How much health would you like to buy?
+
+[if health <50]
+[[Plus 50 health $45]]
+
+[[Plus 10 health $10]]
+[if health >50]
+[[Plus 10 health $10]]
+
+[[Plus 5 health $5]]
+
+
+:: ItemStoreGate {"position":"1071,353","size":"100,100"}
+[if ToolShopUnlock === false]
+Out of stock.
+
+[[Go back|GamerShop]]
+
+[if ToolShopUnlock === true]
+
+I see you have a pass, come on in.
+
+[[Enter|ItemStore]]
+
+[[Head back|GamerShop]]
+
+
+:: LevelStoreBuy {"position":"702,303","size":"100,100"}
+level: level + 1
+money: money - LevelCost
+--
+
+Your new level is: {level}!
+
+You have ${money} left!
+
+[[Go back|GamerShop]]
+
+
+:: Plus 50 health $45 {"position":"848,517","size":"100,100"}
+health: health + 50
+money: money - 45
+--
+
+Your new health is {health}
+
+[[Go back|GamerShop]]
+
+
+:: Plus 10 health $10 {"position":"954,518","size":"100,100"}
+health: health + 10
+money: money - 10
+--
+
+Your new health is {health}
+
+[[Go back|GamerShop]]
+
+
+:: Plus 5 health $5 {"position":"1062,518","size":"100,100"}
+health: health + 5
+money: money - 5
+--
+Your new health is: {health}
+
+[[Go back|GamerShop]]
+
+
+:: MazePath {"position":"267,483","size":"100,100"}
+ReadMazeBook: true
+--
+The book reads:
+
+To all who enter this sacred jungle, I say to you.
+
+Listen to my warning. There is more at stake then you know.
+
+If thou shall seek the knowledge of the maze, you must solve these riddles.
+
+1, What direction do you always call correct?
+
+2, What runs but never sleeps, and is what you are mostly made of?
+
+3, How must you deal with loss?
+
+4, Is the answer _____?
+
+5, You must sometimes retrace your steps.
+
+[[Go back|left]]
+
+
+:: MazeStart {"position":"280,241","size":"100,100"}
+You enter the maze, you can go right or left.
+
+[[Left|Maze fail 1]]
+
+[[Right|Maze2]]
+
+
+:: Maze fail 1 {"position":"160,229","size":"100,100"}
+You hit a dead end.
+
+[[Turn Back|MazeStart]]
+
+
+:: Maze2 {"position":"212,108","size":"100,100"}
+You find a door with a number 2 on it, and a sign that says:
+
+"Answer The Question"
+
+[if ReadMazeBook === true]
+
+This reminds you off the riddle on the book, what do you think the answer is?
+
+[[Water|Maze3]]
+
+[[You on caffene|MazeFail2]]
+
+[[Your legs|MazeFail2]]
+
+[[I want to see the book again|left]]
+
+[else]
+I should go see if I missed any clues
+
+[[Go back|left]]
+
+
+:: Maze3 {"position":"265,0","size":"100,100"}
+There are 4 ways you can go, foward backwards left and right.
+
+[[Go back|Maze2]]
+
+[[Go Foward|Maze4]]
+
+[[Go left|MazeFail3]]
+
+[[Go right|MazeFailRight]]
+
+
+:: MazeFail2 {"position":"391,289","size":"100,100"}
+Nothing happens
+
+[[I should try again|Maze2]]
+
+[[Let me read the book again|left]]
+
+
+:: Maze4 {"position":"134,0","size":"100,100"}
+[if MazeWentBack === false]
+You can go right or left
+
+[[Go back|Maze3]]
+
+[[Go left|Mazefail6]]
+
+[[Go right|Maze5]]
+
+[if MazeWentBack === true]
+It seems a door has appeared
+
+[[Go back|left]]
+
+[[Open the door|MazeDoor]]
+
+
+:: MazeFail3 {"position":"434,0","size":"100,100"}
+You can go right or left
+
+[[Go back|Maze3]]
+
+[[Go left|MazeFail:():]]
+
+[[Go left|MazeFail:():]]
+
+
+:: MazeFailRight {"position":"452,136","size":"100,100"}
+It leads to a dead end
+
+[[Go back|Maze3]]
+
+
+:: MazeFail:(): {"position":"332,120","size":"100,100"}
+Quod quid est cur Cur
+
+[[Revertere|Start]]
+
+
+:: Mazefail6 {"position":"10,109","size":"100,100"}
+It's a dead end
+
+[[Go back|Maze4]]
+
+
+:: Maze5 {"position":"21,245","size":"100,100"}
+MazeWentBack:true
+--
+You can go left or right
+
+[[Go back|Maze4]]
+
+[[Go left|Fail9]]
+
+[[Go right|Fail9]]
+
+
+:: MazeDoor {"position":"126,414","size":"100,100"}
+[if MazeVaultOpen === true]
+
+The vault has already been raided
+
+[[Go back|left]]
+
+[if MazeVaultOpen === false]
+
+There seems to be a vault of gold!
+
+[[Open it!|MazeVault]]
+
+
+:: Fail9 {"position":"21,361","size":"100,100"}
+It goes to a dead end
+
+[[Go back|Maze5]]
+
+
+:: MazeVault {"position":"126,564","size":"100,100"}
+money: money + 70
+MazeVaultOpen:true
+--
+You grab the money in the vault
+
+You now have ${money}
+
+[[Go back|left]]
+
+
+:: DigTreasureX {"position":"572,739","size":"100,100"}
+[if HasTreasureX === false]
+You dig up a big chest, are you sure you want to open it?
+
+[[Yes|OpenTreasureX]]
+
+[[No|2]]
+[if HasTreasureX === true]
+You already dug up the chest and its contents
+
+[[Go back|2]]
+
+
+:: OpenTreasureX {"position":"685,741","size":"100,100"}
+HasTreasureX:true
+money: money + 750
+--
+You open the chest to find 750 dollars worth of gold!
+
+You now have ${money}!
+
+[[Go back|2]]
+
+
+:: ToolQuestCheck {"position":"621,511","size":"100,100"}
+Well I might know how to get some tools.... But you would need to be level 3..
+
+[[Oh Well|Start]]
+
+[if level >2]
+[[But I am level 3!|ToolQuestStart]]
+
+
+:: ToolQuestStart {"position":"741,541","size":"100,100"}
+MineKeyCardDoorCodeUnlocked:true
+--
+Well hello young friend! I'm sorry to say that the tool quest isnt ready yet, but as I want you to still unlock the hidden areas, you get a basic tool pass.
+
+[[Yay!|TempToolUnlock]]
+
+
+:: BridgeCrossing1 {"position":"389,849","size":"100,100"}
+health: health - 30
+--
+You crossed the bridge but you fell and hurt yourself.
+
+[[Continue|RiverShore1]]
+
+
+:: SwimAcrossTheWater1 {"position":"492,850","size":"100,100"}
+It works, your able to make it to other side of the river!
+
+[[Continue|RiverShore1]]
+
+
+:: RiverShore1 {"position":"437,964","size":"100,100"}
+You find 3 main trails, where will you go?
+
+[[Go back|continue34]]
+
+[[Go on the first trail|TheShakeSnake]]
+
+[[Go on the second trail|ReallyBigHole1]]
+
+[[Go on to the third trail|Level2Gate]]
+
+
+:: TheShakeSnake {"position":"179,897","size":"100,100"}
+You come apon a building called "The Shake Shack"
+
+You see two double glass doors and a keycard door
+
+[[Open Glass Doors|TheShakeShackShop]]
+
+[[Turn back|RiverShore1]]
+
+[if ShakeShackStaff === true]
+[[Use keycard|ShakeShackStaff]]
+
+
+:: TheShakeShackShop {"position":"28,1046","size":"100,100"}
+Welcome to the shake shop! *We serve shakes that may or may not contain nuclear waste material, and are not liable for death or radiation poisoning.*
+
+[[View the menu|TheShakeShackMenu]]
+[if level === 1]
+
+You also see a sign that says looking for staff
+
+[[Apply|BecomeShakeShackStaff]]
+
+
+:: ShakeShackStaff {"position":"268,1054","size":"100,100"}
+[if level === 1]
+
+You make 5 dollars per click, oh well.
+
+[[Work|ShakeShackWork]]
+
+[[Stop working|RiverShore1]]
+[if level > 1]
+
+You see a letter on your desk
+
+[[Read the letter|ShakeShackStaffmakefalse]]
+
+
+:: TheShakeShackMenu {"position":"19,1155","size":"100,100"}
+Menu:
+[if money >100]
+
+[[Democracy juice $100|BuyDemocracyJuiceShake]]
+[if money >1000]
+
+[[Dragon juice $1000|BuyDragonJuiceShake]]
+[if money > 0]
+
+[[Toxic waste FREE|BuyToxicWasteShake]]
+
+[[Air $1|BuyAirAndWasteADollar]]
+
+[[Leave|RiverShore1]]
+
+[else]
+
+[if money === 0]
+
+[[Leave|RiverShore1]]
+
+
+:: BecomeShakeShackStaff {"position":"133,1144","size":"100,100"}
+You applied and oddly enough you were hired. You were also given a lovely note: Please remember that your not payed nearly enough and also we can fire you if we want :D
+
+[[Continue|ShakeShackStaffSettrue]]
+
+
+:: ShakeShackStaffSettrue {"position":"165,1058","size":"100,100"}
+ShakeShackStaff: true
+--
+
+[[Return to the TheSnakeShack|TheShakeSnake]]
+
+
+:: ShakeShackWork {"position":"250,1159","size":"100,100"}
+money: money + 5
+--
+You now have ${money}!
+
+[[Keep working|ShakeShackStaff]]
+
+
+:: ShakeShackStaffmakefalse {"position":"356,1166","size":"100,100"}
+ShakeShackStaff:false
+--
+Your fired you fool
+
+[[Oh well....|RiverShore1]]
+
+
+:: TempToolUnlock {"position":"822,654","size":"100,100"}
+ToolShopUnlock:true
+--
+You can now buy tools, but be warned! The tools are still being worked on and not a lot of things require them, but they still are fun! Also, I heard something about a mine keycard door and it made me think of the number 4927, not sure why. Hope this helps you!
+
+[[Alright!|GamerShop]]
+
+
+:: ItemStore {"position":"1186,357","size":"100,100"}
+I dont have a lot of goods right now, but I'll show you what you can afford
+
+[[Go back|GamerShop]]
+
+[if money >500]
+[[Shovel $500]]
+
+
+:: Shovel $500 {"position":"1066,233","size":"100,100"}
+money: money - 500
+HasShovel:true
+--
+
+You now own a shovel, your remaiming funds are ${money}.
+
+[[Return|Start]]
+
+
+:: BuyDemocracyJuiceShake {"position":"8,1275","size":"100,100"}
+money: money - 100
+health: health +50
+--
+You can now vote, I mean you could always do that but now you feel its healthy to persue freedom. That made your health {health}.
+
+[[I vote to continue playing this game!|RiverShore1]]
+
+[[I dont vote to continue playing this game!|BadVoterShallDie]]
+
+
+:: BuyDragonJuiceShake {"position":"350,1272","size":"100,100"}
+health: health +150
+money: money - 1000
+--
+You drank the dragon juice and felt very healthy all of sudden, but it was not able to fully heal you as it was very hot, your new health is {health}.
+
+[[Continue|RiverShore1]]
+
+
+:: BuyToxicWasteShake {"position":"244,1272","size":"100,100"}
+You die because you drank toxic waste
+
+[[Restart|Init]]
+
+
+:: BuyAirAndWasteADollar {"position":"137,1264","size":"100,100"}
+money: money - 1
+--
+I have no idea what you expected, but you lost 1 dollar.
+
+[[Continue|Start]]
+
+
+:: BadVoterShallDie {"position":"0,1423","size":"100,100"}
+health: -9999999999
+money: -9999999999
+level: -9999999999
+--
+
+Well I suppose we all make mistakes
+
+[[Restart|Init]]
+
+
+:: ReallyBigHole1 {"position":"576,961","size":"100,100"}
+After walking for a bit you find a giant hole in the ground, which would look to be an abandoned mine if not for the smoke rising from it
+
+[[Go back|RiverShore1]]
+
+[[Investagate|ReallyBigHole2 ]]
+
+
+:: ReallyBigHole2 {"position":"707,960","size":"100,100"}
+As you investagate around the hole, you see a poorly hidden door which requires a password, is asks you to enter it below:
+
+{text input for: 'MinePasswordDoorCode'}
+
+[[Check password|MinePasswordCheck1]]
+
+[[Go back|ReallyBigHole1]]
+
+[if MineKeyCardDoorCodeUnlocked === true]
+Maybe that number you were told about when you unlocked is the code!
+
+4927
+
+
+:: Level2Gate {"position":"459,1101","size":"100,100"}
+[if level === 1]
+You come across an old hut with a man inside who says he wants to ask you some questions
+
+[[Alright|Level2GateExplain]]
+
+[[Head back quickly|RiverShore1]]
+
+[if level > 1]
+The man in the hut greets you as you head down to your new tent
+
+[[Head back|RiverShore1]]
+
+[[Head to the campsite|Campsite1 ]]
+
+
+:: Level2GateExplain {"position":"596,1045","size":"100,100"}
+"I'm the gate keeper of this here campground" he says "And only level 2+ people are allowed to stay!". "Until you become level 2 or higher, you cant come in here"
+
+[[How do I increase my level?|LevelIncreaseExplained]]
+
+[[Alright|RiverShore1]]
+
+
+:: LevelIncreaseExplained {"position":"707,1080","size":"100,100"}
+"You buy them from the gamer store, here are some directions" he tells you
+
+[[Vist the Gamer Shop|GamerShop]]
+
+[[Alright|RiverShore1]]
+
+
+:: Head to the campsite {"position":"0,0","size":"100,100"}
+You shouldn't be here!
+
+
+:: Campsite1 {"position":"537,1300","size":"100,100"}
+[if BuiltCampsiteBridge1 === false]
+To get to tent, you would have to cross a river, and to cross that you would need to hire someone to build a bridge
+
+[[Hire someone|BuildBridgeCampsiteGate]]
+
+[[Turn back|RiverShore1]]
+
+[if BuiltCampsiteBridge1 === true]
+As you cross over your picturesque wooden bridge, you feel powerfull as you were able to transform nature itself
+
+[[Continue|Campsite2]]
+
+[[Head back|RiverShore1]]
+
+
+:: MinePasswordCheck1 {"position":"842,957","size":"100,100"}
+[if MinePasswordDoorCode == 4927]
+It works and the door opens, what do you do now?
+
+[[Enter the hole|EnterHole1]]
+
+[[Leave the door|RiverShore1]]
+
+[else]
+The door doesn't respond, maybe you'll be able to find the door code if you also got tools.
+
+[[Turn back|RiverShore1]]
+
+
+:: EnterHole1 {"position":"828,1087","size":"100,100"}
+Inside the room you see a peice of paper telling you:
+
+We never began anew, we only return to the start
+
+[[Or do we|RiverShore1]]
+
+
+:: GamerShopExplained {"position":"375,481","size":"100,100"}
+Well when the [[Gamer Shop|GamerShop]] opened with all there cool items and nice prices everyone went there instead of here. Although we used to still get some customers from buy local, but when Gamer Inc. opened and online shopping became so easy the Gamer Shop became local.
+
+[[Alright|grocery]]
+
+
+:: BuildBridgeCampsiteGate {"position":"595,1165","size":"100,100"}
+[if money >24]
+It will cost you $25 of your {money} dollars but you can build a bridge
+
+[[Build the bridge|BuiltCampsiteBridge1settrue]]
+
+[[Cancel it|RiverShore1]]
+
+[if money <25]
+
+You need 25 dollars to build the bridge
+
+[[Go back|RiverShore1]]
+
+
+:: Campsite2 {"position":"699,1408","size":"100,100"}
+You find a old poster saying something about a hidden treasure
+
+[[Investagate it|TresasureHunt1]]
+
+[[Ignore it|CampsiteHub1]]
+
+
+:: BuiltCampsiteBridge1settrue {"position":"804,1250","size":"100,100"}
+BuiltCampsiteBridge1:true
+money: money - 25
+--
+The bridge is built before your eyes, a true marvel of modern enginering.
+
+[[Continue|Campsite2]]
+
+
+:: TresasureHunt1 {"position":"574,1409","size":"100,100"}
+Upon further inspection, you discover that the sign was actually a job offering
+
+[[Continue investagating|TreasureHunt2]]
+
+[[Stop investagating|Campsite2]]
+
+
+:: CampsiteHub1 {"position":"692,1521","size":"100,100"}
+On the right side, you see a old moss covered stone door and on the left side you see a small fountain. Wen you look in front of you, your able to see that the path continues.
+
+[[Go back|Campsite2]]
+
+[[Go foward|CampHub1]]
+
+[[Investagate the door|TempleGate1]]
+
+[[Investagate the fountain|InspectFountain1]]
+
+
+:: TreasureHunt2 {"position":"448,1415","size":"100,100"}
+The job is for scavenging scrap, and your paid in verying amounts depending on the quality of the scrap. Although it's only taking level 2 staff
+
+[[Go back|Campsite2]]
+
+[if level === 2]
+[[Work|TreasureHuntWork1]]
+
+
+:: TreasureHuntWork1 {"position":"338,1413","size":"100,100"}
+[if level === 2]
+Your job tells you to look for scrap nearbye
+
+[[Work|TreasureHuntWorkButYes]]
+
+[[Finish for the day|Campsite2]]
+
+[else]
+Only level 2 staff are allowed
+
+[[Head back|Campsite2]]
+
+
+:: TreasureHuntWorkButYes {"position":"221,1419","size":"100,100"}
+money: money + 10
+--
+
+[[Deposit load|TreasureHuntWork1]]
+
+
+:: TrainHubCentral {"position":"673,1683","size":"100,100"}
+You walk into an old stone building, it looks old. Strangely, there seems to be 1940s era decorations. You see a sign covered in moss, it could explain what this building was for. You also see another trail you could take.
+
+[[Head back|CampsiteHub1]]
+
+[[Continue down the trail|Monty'sMysteryMuseumOutside]]
+
+[if HasHatchet = true]
+
+[[View the sign|APMInfo]]
+
+[else]
+
+You would be able to look at the sign, but you would need some sort of hatchet to view it.
+
+
+:: TempleGate1 {"position":"564,1539","size":"100,100"}
+On the door was a few french words, which seemed to only want people level 3 or above to read
+
+[[Leave it|CampsiteHub1]]
+[if level > 2]
+
+[[Read the words|TempleWords1]]
+
+
+:: InspectFountain1 {"position":"798,1524","size":"100,100"}
+The water in the fountain seemed to have a green tint, reminding you of a story about a secret society foiled by a single poisoned olive.
+
+[[Return to the trail|CampsiteHub1]]
+
+
+:: TempleWords1 {"position":"449,1531","size":"100,100"}
+The words go as follows:
+
+*Where we all pray*
+
+*Each and every day*
+
+*If he'll return*
+
+*We will all turn*
+
+*Forever*
+
+Then the door opens into a hallway as soon as you finish reading the words.
+
+[[Enter the hallway|TempleHallway1]]
+
+[[Stay away from the hallway|CampsiteHub1]]
+
+
+:: TempleHallway1 {"position":"331,1535","size":"100,100"}
+The hallway is lit by burning torches, which although seeming anchient are still burning. Casting an erie shadow across the floor and revealing a sign that says: Now is your last to chance to get your health up really high because if you dont you might die
+
+[[Take a break to boost your health|RiverShore1]]
+
+[[Continue foward|TempleBossFightStart]]
+
+
+:: TempleBossFightStart {"position":"220,1538","size":"100,100"}
+[if BeatLordMapleFirstBossFight1 === false]
+You hear a door close behind you, the sign did say it was your last chance
+
+[[Hope you got some health|TempleBossFightActuallStart]]
+[if BeatLordMapleFirstBossFight1 === true]
+You remember the harsh fight you first encountered when you entered this temple, it's a good thing thats over with. Although, there might soon be more stuff here.
+
+[[Return|CampsiteHub1]]
+
+
+:: TempleBossFightActuallStart {"position":"110,1541","size":"100,100"}
+health: health - 15
+--
+Inside the room your now trapped in, torches all around the walls start to reveal themselves, lighting on fire one after another.
+
+And then the wall opens in front of you
+
+And a man walks out
+
+And the sheer power eminating from the man is enough to hurt your health by 15 points, leaving you with {health}
+
+[[Continue|TempleBossFightStart1]]
+
+
+:: TempleBossFightStart1 {"position":"6,1538","size":"100,100"}
+[if health < 1]
+You died, which is kinda weird when he only did 15 damage to you.
+
+Oh well
+
+[[Restart|Init]]
+
+[if health > 0]
+You need to decide where to hit him, in the head or chest
+
+[[Head|TempleBossFight2]]
+
+[[Chest|TempleBossFight1fail]]
+
+
+:: TempleBossFight2 {"position":"0,1646","size":"100,100"}
+LordMapleBossFightDamage1: LordMapleBossFightDamage1 + 1
+--
+You get a few more hits in, and it seems mostly to annoy him, and if you get 2 more good hits you might actually annoy him enough to defeat him!
+You could also try to kick him as well, but who knows if it will work
+
+[[Kick him|TempleBossFight2Win]]
+
+[[Hit him|TempleBossFight2Meh]]
+
+
+:: TempleBossFight1fail {"position":"108,1650","size":"100,100"}
+health: health - 30
+--
+Well his chest was heavily armored, and hitting it only ended up hurting you by 30 points, oh well
+
+[if health < 1]
+And now your dead :(
+
+[[Restart|Init]]
+[else]
+
+[[Continue|TempleBossFight2]]
+
+
+:: TempleBossFight2Win {"position":"7,1753","size":"100,100"}
+LordMapleBossFightDamage1: LordMapleBossFightDamage1 + 1
+health: health - 15
+--
+Kicking him actually hurt him, but his strong legs hurt to kick and cost 15 health
+
+[if health < 1]
+And it cost you your life :(
+
+[[Restart|Init]]
+[else]
+[[Continue|TempleBossFight3]]
+
+
+:: TempleBossFight2Meh {"position":"118,1757","size":"100,100"}
+He was ready for your punches, causing them to fail.
+
+[[Continue|TempleBossFight3]]
+
+
+:: TempleBossFight3 {"position":"6,1864","size":"100,100"}
+LordMapleBossFightDamage1: LordMapleBossFightDamage1 + 1
+--
+You get some hits into him and thats seems to annoy him
+
+[if LordMapleBossFightDamage1 === 3]
+[[Continue|TempleBossFightDone]]
+[else]
+You just need to hit him once more!
+
+[[Kick|TempleBossFight2Win]]
+
+
+:: TempleBossFightDone {"position":"294,1701","size":"100,100"}
+BeatLordMapleFirstBossFight1:true
+health:100
+money: money + 500
+--
+You have annoyed my puny human, but also suprised me. You will be rewarded the right to live and some gold. But you have raided my temple and that is unaceptable. Do not interfear with any of my things or I will not be so generous. I will teleport you back.
+
+[[Teleport|CampsiteHub1]]
+
+
+:: SwimAcrossTheRiver1 {"position":"455,1302","size":"100,100"}
+health: health = health -20
+--
+[if health < 1]
+You were not healthy enough to cross the river, and you died. 
+
+[[Restart|Init]] 
+[else]
+You made it across the river, but you stepped on a pointy rock and hurt yourself slightly. Your health is now: {health}
+
+[[Continue|Campsite2]]
+
+
+:: Damask Holdings {"position":"715,23","size":"100,100"}
+Final Passage:
+
+This is the end so far, but the game will probably be updated the week. 
+I thank you for playing the game, and also want you not to think the game is done. The game in it's current state is over, but consider this an alpha game or maybe a demo. Also make sure you've explored everything, a lot of parts are hidden between a single choice like for instance if you click left at the start, you have a entire adventure you could have missed if you clicked right and never went back.
+
+[[Yay!|Start]]
+
+[[Restart the game|Init]]
+--
+
+
+:: Hatchet $750 {"position":"1186,505","size":"100,100"}
+money: money = money - 750
+HasHatchet:true
+--
+You purchased a hatchet. You now have ${money}.
+
+[[Return to GamerShop|GamerShop]]
+
+[[Head outside|Start]]
+
+
+:: Monty'sMysteryMuseumOutside {"position":"841,1672","size":"100,100"}
+You see a castle on the top of a hill on the side of the trail. The clouds seem to darken as you aproach it. You dont have to go to the castle, but something that big is bound to have some treasure.
+
+[[Head to the castle|Monty'sMysteryMuseumGate]]
+
+[[Continue down the path|LMStatue]]
+
+
+:: APMInfo {"position":"723,1819","size":"100,100"}
+The sign tells you:
+With the rise of the railroad we at the [Unknown] have started operation [Unkown]-D! Prepare to start anew in a jungle paradise for the wealthy! All needs ands wants will be delt with by our wonderful staff! [Unknown] will design wonder[Unknown]. There apears to be some old railway infrastructure, you could see if the train still works. Who knows, it might be able to be used as a way to travel around the jungle quickly.
+
+**OPENS 1946**
+
+[[Return|TrainHubCentral]]
+
+[[Head to the old railway|OldRailwayStation1]]
+
+
+:: OldRailwayStation1 {"position":"591,1824","size":"100,100"}
+This station must have been built almost 100 years ago! Jungle flora and fauna cover the tracks, there are a few old lamposts but they barely work. It creates a rather spooky atmosphere. Renovating this train station would allow you to travel far into the jungle, but would cost so much labor and money that only someone of level 6 or above could even attempt to set up a train newtwork. It might be possible to add a zipline if one wanted to travel faster.
+
+[[Head back|TrainHubCentral]]
+
+[if Zipline1Unlock = false]
+[[I am intrested in this zipline idea|ZiplineHub1]]
+[else]
+[[Head to the zipline|ZiplineHub1]]
+
+
+:: ZiplineHub1 {"position":"628,1954","size":"100,100"}
+[if ZiplineLine1Built = false]
+You need to purchase a zipline station to allow you to set up a zipline network. It costs 250 for your first station. You have ${money}. 
+
+[[Buy zipline station|BuyZipline1]]
+
+[[Head back|OldRailwayStation1]]
+[else]
+A small building and a spiral staircase greet you on your way to the zipline. 
+
+[[Go up the staircase to the zipline|ZiplineHubCheck]]
+
+[[Head tp the staion|TrainHubCentral]]
+
+
+:: BuyZipline1 {"position":"587,2087","size":"100,100"}
+[if money < 250]
+You cant afford a zipline. 
+
+[[Head back|TrainHubCentral]]
+
+[if money > 249]
+You can afford a zipline, do you want it?
+
+[[Yes|BuyZipline1Yes]]
+
+[[No|ZiplineHub1]]
+
+
+:: ZiplineHubCheck {"position":"483,2057","size":"100,100"}
+[if ZiplineLine1Built = false]
+You need to purchase the zipline line. It will cost $400
+
+[[Purchase|ZiplineLine1PurchaseCheck]]
+
+[[Go back|OldRailwayStation1]]
+[if ZiplineLine1Built = true]
+Please choose where you would like to zipline.
+
+[[Choose|ZiplineHub]]
+
+
+:: BuyZipline1Yes {"position":"745,2083","size":"100,100"}
+money: money = money - 250
+ZiplineLine1Built:true
+--
+You purchased the zipline station, your money is now ${money}.
+
+[[Continue|ZiplineHub1]]
+
+
+:: ZiplineLine1PurchaseCheck {"position":"482,1950","size":"100,100"}
+[if money > 399]
+You can purchase the zipline itself, allowing fast travel across the jungle. It cannot connect as far as a railway, but it is much cheaper.
+
+[[Purchase|ZiplineHubPurchase]]
+
+
+:: ZiplineHub {"position":"791,794","size":"200,100"}
+You must now choose which station to zipline to, you can only use a station if you have built it.
+[if ZiplineLine1Built = true]
+
+[[Zipline to the old trainstation|ZiplineHub1]]
+
+
+:: ZiplineHubPurchase {"position":"467,1819","size":"100,100"}
+money: money = money - 400
+ZiplineLine1Built:true
+--
+The zipline system has been purchased, you are required to purchase every station before you can zipline to it. You now have ${money}.
+
+[[Continue|ZiplineHub1]]
+
+
+:: Monty'sMysteryMuseumGate {"position":"904,1522","size":"100,100"}
+As you aproach the castle, you see a bright neon sign stating: 
+**Montys's Mystery Museum!** You also see a sign on the door asking for staff applications. It apears that this could become a job or a store, you will have to find out yourself.
+
+[[Back Out|Monty'sMysteryMuseumOutside]]
+
+[[Continue|Monty'sMysteyMuseumHallway]]
+
+
+:: LMStatue {"position":"946,1666","size":"100,100"}
+Wait mortal.
+
+[[Turn back|Start]]
+
+
+:: Monty'sMysteyMuseumHallway {"position":"1032,1550","size":"100,100"}
+Inside of the castle is a mix of 1950s era furniture and victorian era furniture, it creates a rather confusing feeling. There are 4 doors and a bathroom. 
+
+[[Store Area|MMMStore1]]
+
+[[Employee Area|MMMStaffArea]]
+
+[[Museum?|MMMMuseum]]
+
+[[Mystery Door|SirStephansMausoleum]]
+
+
+:: MMMStore1 {"position":"943,1401","size":"100,100"}
+A sign at door tells you that: **Level 5+ Only!**
+
+[[Uh oh|Monty'sMysteyMuseumHallway]] 
+
+[[if level > 4]
+[[Perfect|MMMStore2]]
+
+
+:: MMMStaffArea {"position":"1070,1414","size":"100,100"}
+[if level === 3]
+
+You are able to work as a retail employee. You make 20 a click, not bad.
+
+[[Work|MMMLevel3Work]]
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+[if level === 4]
+You are able to work as a manager, higher pay and less work. You make 35 a click, very nice.
+
+[[Work|MMMLevel4Work]]
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+
+[if level > 4]
+You are more qualified then Monty would like.
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+
+[if level < 3]
+You are not a high enough level.
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+
+
+:: SirStephansMausoleum {"position":"1153,1549","size":"100,100"}
+scelestum spumam relinquas! Non est digna es intrare in requiem tuam! Acer Miserere Maii!
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+
+
+:: MMMMuseum {"position":"1093,1149","size":"100,100"}
+Piles of junk over 3 storys tall litter the floor. You wonder if this gargantuan mess was was once a real museum and if it ever will be. There is a small rope preventing you from toutching the junk.
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+
+
+:: MMMLevel3Work {"position":"1056,1293","size":"100,100"}
+money: money = money + 20
+--
+You worked and worked, but got barely any customers. 
+
+[[Head back|MMMStaffArea]]
+
+
+:: MMMLevel4Work {"position":"1175,1250","size":"100,100"}
+money: money = money + 35
+--
+You work and you work, but barely anything happens. One employee gets sent to the boss's office though.
+
+[[Go back|MMMStaffArea]]
+
+
+:: MMMStore2 {"position":"928,1266","size":"100,100"}
+If you dont see an item, you cant afford it.
+
+[[Buy nothing|Monty'sMysteyMuseumHallway]]
+
+[if money > 449]
+[[Buy Among Us juice $450|MMMStoreAUJ]]
+
+[if money > 799]
+[[Buy Sus juice $800|MMMStoreSJ]]
+
+[if money > 1199]
+[[Buy Monkey $1200|MMMStoreMP]]
+
+
+:: MMMStoreAUJ {"position":"1010,1007","size":"100,100"}
+money: money = money - 450
+health: health = 100
+--
+You have purchased Among Us juice, you are very sus. Your health is now {health}, and you have ${money} left.
+
+[[Go back|Monty'sMysteyMuseumHallway]]
+
+
+:: MMMStoreSJ {"position":"974,1140","size":"100,100"}
+health: health = health - 50
+--
+[if health < 1]
+You died. You couldnt handle the sus.
+
+[[Restart|Init]]
+[if health > 1]
+You survived being sus, but your health is now {health}. You only have ${money} left.
+
+[[Go back|Monty'sMysteyMuseumHallway]]
+
+
+:: MMMStoreMP {"position":"1136,1019.0000610351562","size":"100,100"}
+Out of stalk!
+
+[[Head back|Monty'sMysteyMuseumHallway]]
+
+
+:: CampHub1 {"position":"698,1685","size":"100,100"}
+This is the end so far, but the game will probably be updated the week.
+I thank you for playing the game, and also want you not to think the game is done. The game in it's current state is over, but consider this a alpha game or maybe a demo. Also make sure you've explored everything, a lot of parts are hidden between a single choice, like for instance if you click left at the start, you have a entire adventure you could have missed if you clicked right and never went back.
+
+[[Yay!|Start]]
+
+[[Restart the game|Init]]
+
+
+:: 1 {"position":"1125,849","size":"100,100"}
+" $name, make your valentines, tomorow is the valintines day party!" Your mom shouts to you. [[Continue]]
+
+
+:: Lie {"position":"1050,1150","size":"100,100"}
+You run to school as fast as sonic the pickeld hering. 
+
+
+[[ZOOM]]
+
+
+:: Not lie {"position":"1200,1150","size":"100,100"}
+Your mom is so angry she locks you in the basement for 37 years
+
+
+[[UGH!|0]]
+
+
+:: ZOOM {"position":"1050,1300","size":"100,100"}
+You see school, do you go in or keep runing?
+
+[[Run]]
+
+[[School|School pt 1]]
+
+
+:: Run {"position":"975,1450","size":"100,100"}
+You hit a power plant
+
+[[Not again|0]]
+
+
+:: School pt 1 {"position":"1125,1450","size":"100,100"}
+Who is your teacher?
+
+<<textbox "$nameteacher" "Ms. Binkow">>
+
+[[Go in class]]
+
+
+:: Go in class {"position":"1125,1600","size":"100,100"}
+"Hello $name! " $nameteacher said. [[Next]]
+
+
+:: Next {"position":"1125,1750","size":"100,100"}
+School is boring 
+
+[[Make time go faster]]
+
+[[So is this game|DOOM]]
+
+
+:: Make time go faster {"position":"1050,1899","size":"100,100"}
+" Its Valentines time! " $nameteacher said.
+
+[[I cant bother to finnish this]]
+
+
+:: DOOM {"position":"1947,1334","size":"100,100"}
+"MWA HA HA HA HA, $name i will destroy you!"
+
+[[ok|DOOM pt 2]]
+
+
+:: DOOM pt 2 {"position":"1951,1454","size":"100,100"}
+You get destroyed [[UGH! I HATE THIS GAME!|DOOM pt 3]]
+
+[[ I will try again|0]]
+
+
+:: DOOM pt 3 {"position":"2093,1413","size":"100,100"}
+[[Is this one those endless cicles of pain?|DOOM]]
+
+
+:: I cant bother to finnish this {"position":"1050,2049","size":"100,100"}
+it might be updated during mid winter break, stay tuned. 
+
+[[I WANT TO CHOSSE HOW IT ENDS!]]
+
+
+:: I WANT TO CHOSSE HOW IT ENDS! {"position":"1050,2199","size":"100,100"}
+OK OK, just email me at zmdvorkin@outlook.com Please report bugs or sugest ideas (please do, i dont get enoughf decent emails).  [[Restart|0]]
+
+

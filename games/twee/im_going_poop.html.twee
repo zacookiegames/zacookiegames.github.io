@@ -1,0 +1,30 @@
+:: StoryTitle
+Im going poop
+
+
+:: StoryData
+{
+	"ifid": "FE4894DB-6DE8-4D09-9801-D649411EE011",
+	"format": "Harlowe",
+	"format-version": "2.1.0",
+	"start": "restart",
+	"zoom": 1
+}
+
+
+:: restart [restart] {"position":"1126,559.5","size":"100,100"}
+[[die]]                                                                                  [[poop]]
+
+
+:: die {"position":"1060,723.5","size":"100,100"}
+your dead start agen                                                                  [[restart]]
+
+
+:: poop {"position":"1216,717.5","size":"100,100"}
+you pooped horay                                                                       [[restart]]
+
+
+:: Untitled Passage {"position":"1064,613.5","size":"100,100"}
+Double-click this passage to edit it.
+
+

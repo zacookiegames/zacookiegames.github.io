@@ -1,0 +1,114 @@
+:: StoryTitle
+Valentines Day
+
+
+:: StoryData
+{
+	"ifid": "4D190E2B-8352-420F-8ED4-A7DE71786929",
+	"format": "SugarCube",
+	"format-version": "2.30.0",
+	"start": "0",
+	"zoom": 1
+}
+
+
+:: 0 {"position":"1173,558","size":"100,100"}
+What is ye name?
+<<textbox "$name" "Grumpy Gus">>
+[[Done|1]]
+
+
+:: 1 {"position":"1125,849","size":"100,100"}
+" $name, make your valentines, tomorow is the valintines day party!" Your mom shouts to you. [[Continue]]
+
+
+:: Continue {"position":"1125,1000","size":"100,100"}
+You wake up, you say to your self " $name, why didnt you make your valentines?"
+You then here your momas she asks, "Did you make your valentiens?"
+
+
+[[YES MOM|Lie]]
+
+[[NO MOM|Not lie]]
+
+
+:: Lie {"position":"1050,1150","size":"100,100"}
+You run to school as fast as sonic the pickeld hering. 
+
+
+[[ZOOM]]
+
+
+:: Not lie {"position":"1200,1150","size":"100,100"}
+Your mom is so angry she locks you in the basement for 37 years
+
+
+[[UGH!|0]]
+
+
+:: ZOOM {"position":"1050,1300","size":"100,100"}
+You see school, do you go in or keep runing?
+
+[[Run]]
+
+[[School|School pt 1]]
+
+
+:: Run {"position":"975,1450","size":"100,100"}
+You hit a power plant
+
+[[Not again|0]]
+
+
+:: School pt 1 {"position":"1125,1450","size":"100,100"}
+Who is your teacher?
+
+<<textbox "$nameteacher" "Ms. Binkow">>
+
+[[Go in class]]
+
+
+:: Go in class {"position":"1125,1600","size":"100,100"}
+"Hello $name! " $nameteacher said. [[Next]]
+
+
+:: Next {"position":"1125,1750","size":"100,100"}
+School is boring 
+
+[[Make time go faster]]
+
+[[So is this game|DOOM]]
+
+
+:: Make time go faster {"position":"1050,1899","size":"100,100"}
+" Its Valentines time! " $nameteacher said.
+
+[[I cant bother to finnish this]]
+
+
+:: DOOM {"position":"1947,1334","size":"100,100"}
+"MWA HA HA HA HA, $name i will destroy you!"
+
+[[ok|DOOM pt 2]]
+
+
+:: DOOM pt 2 {"position":"1951,1454","size":"100,100"}
+You get destroyed [[UGH! I HATE THIS GAME!|DOOM pt 3]]
+
+[[ I will try again|0]]
+
+
+:: DOOM pt 3 {"position":"2093,1413","size":"100,100"}
+[[Is this one those endless cicles of pain?|DOOM]]
+
+
+:: I cant bother to finnish this {"position":"1050,2049","size":"100,100"}
+it might be updated during mid winter break, stay tuned. 
+
+[[I WANT TO CHOSSE HOW IT ENDS!]]
+
+
+:: I WANT TO CHOSSE HOW IT ENDS! {"position":"1050,2199","size":"100,100"}
+OK OK, just email me at zmdvorkin@outlook.com Please report bugs or sugest ideas (please do, i dont get enoughf decent emails).  [[Restart|0]]
+
+
