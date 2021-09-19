@@ -5,20 +5,19 @@ Homeless Survival
 :: StoryData
 {
 	"ifid": "E81CDBD2-CBD7-43FB-B9F8-87BC8650EEDC",
-	"format": "SugarCube",
-	"format-version": "2.30.0",
+	"format": "Harlowe",
+	"format-version": "3.2.0",
 	"start": "Start",
 	"zoom": 1
 }
 
-
-:: StoryInit {"position":"100,100","size":"100,100"}
-<<set $_dollars_to_win = 40>>
-<<set $_total_dollars = random(10,25)>>
-<<set $_total_energy = 3>>
-<<set $_pray_probability_nothing_happens = 20>>
-<<set $_pray_probability_angry = 10 >>
-<<set $_pray_probability_double_money =  10 >>
+:: Init {"position":"713,139","size":"100,100"}
+    _dollars_to_win:40
+    _total_dollars:10+random.d10
+    _total_energy :3
+    _pray_probability_nothing_happens:20
+    _pray_probability_angry:10
+    _pray_probability_double_money:10
 
 
 :: PassageHeader {"position":"225,100","size":"100,100"}
@@ -177,28 +176,28 @@ The sign has two jobs:
 
 
 
-[[Paper boy]]     
+[[Paper boy]]
   5$
-  5 Energy 
+  5 Energy
 
 
 
 [[Writer]]
-  8$                
-  8 Energy          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  8$
+  8 Energy
+
+
+
+
+
+
+
+
+
+
+
+
+
   <<return "go back">>
 
 
@@ -208,7 +207,7 @@ The sign has two jobs:
     You don't have energy to work ? Maybe you should get more sleep
 <<else>>
     <<set $_total_energy to $_total_energy - 5>>
-    
+
     <<set $_total_dollars to $_total_dollars + 5>>
     You get 5  dollars, which means you have $_total_dollars dollars all together.
 <</if>>
@@ -223,7 +222,7 @@ The sign has two jobs:
     You don't have energy to work ? Maybe you should get more sleep
 <<else>>
     <<set $_total_energy to $_total_energy - 8>>
-    
+
     <<set $_total_dollars to $_total_dollars + 9>>
     You get 8  dollars, which means you have $_total_dollars dollars all together.
 <</if>>
